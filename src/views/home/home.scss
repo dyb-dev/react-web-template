@@ -1,0 +1,46 @@
+/*
+ * @Author: dyb-dev
+ * @Date: 2025-02-12 15:15:17
+ * @LastEditors: dyb-dev
+ * @LastEditTime: 2025-02-22 17:46:04
+ * @FilePath: /react-web-template/src/views/home/home.scss
+ * @Description: 首页样式
+ */
+
+.home {
+    display: flow-root;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+
+    &__logo-box {
+        display: flex;
+        gap: 0 60px;
+        align-items: center;
+        justify-content: center;
+        margin: 100px 0 100px;
+
+        &__item {
+            height: 150px;
+            transition: filter 300ms;
+            transition: all 0.5s;
+            will-change: filter;
+
+            &-react:hover {
+                transform: scale(1.1);
+                filter: drop-shadow(0 0 2em #58c4dc);
+            }
+
+            &-vite:hover {
+                transform: scale(1.1);
+                filter: drop-shadow(0 0 2em #646cffaa);
+            }
+        }
+    }
+
+    &__button {
+        width: 650px;
+        margin: 300px auto 0;
+        color: var(--text-color);
+    }
+}

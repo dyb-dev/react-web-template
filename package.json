@@ -1,0 +1,82 @@
+{
+    "name": "react-web-template",
+    "version": "1.0.0",
+    "description": "基于`react全家桶`搭建的Web移动端模板",
+    "author": "dyb-dev",
+    "license": "MIT",
+    "type": "module",
+    "private": true,
+    "main": "./src/main.tsx",
+    "scripts": {
+        "prepare": "husky",
+        "dev": "vite",
+        "build": "npm run ts-check && npm run build-only",
+        "build-only": "vite build",
+        "preview": "vite preview",
+        "ts-check": "tsc --build --force",
+        "release": "project-cli release"
+    },
+    "engines": {
+        "node": ">=22.0.0",
+        "pnpm": ">=9.9.0"
+    },
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/dyb-dev/react-web-template"
+    },
+    "homepage": "https://github.com/dyb-dev/react-web-template",
+    "bugs": {
+        "url": "https://github.com/dyb-dev/react-web-template/issues",
+        "directory": "https://github.com/dyb-dev/react-web-template"
+    },
+    "devDependencies": {
+        "@dyb-dev/eslint-config": "^0.2.2",
+        "@dyb-dev/prettier-config": "^0.0.5",
+        "@dyb-dev/project-cli": "^0.0.8",
+        "@dyb-dev/stylelint-config": "^0.0.3",
+        "@dyb-dev/ts-config": "^0.0.8",
+        "@types/react": "^19.0.8",
+        "@types/react-dom": "^19.0.3",
+        "@vitejs/plugin-legacy": "^5.4.2",
+        "@vitejs/plugin-react-swc": "^3.8.0",
+        "autoprefixer": "^10.4.20",
+        "eslint": "^8.57.1",
+        "husky": "^9.1.6",
+        "portfinder-sync": "^0.0.2",
+        "postcss-mobile-forever": "^4.2.1",
+        "prettier": "^3.3.3",
+        "prettier-eslint": "^16.3.0",
+        "rollup": "^4.24.0",
+        "rollup-plugin-copy": "^3.5.0",
+        "sass": "^1.80.3",
+        "stylelint": "^16.10.0",
+        "terser": "^5.36.0",
+        "typescript": "~5.6.3",
+        "vite": "^6.1.0",
+        "vite-plugin-html": "^3.2.2",
+        "vite-plugin-mkcert": "^1.17.6",
+        "vite-plugin-pwa": "^0.19.8",
+        "workbox-cacheable-response": "^7.1.0",
+        "workbox-core": "^7.1.0",
+        "workbox-precaching": "^7.1.0",
+        "workbox-routing": "^7.1.0",
+        "workbox-strategies": "^7.1.0",
+        "workbox-window": "^7.1.0"
+    },
+    "dependencies": {
+        "antd-mobile": "^5.38.1",
+        "antd-mobile-icons": "^0.3.0",
+        "axios": "^1.7.7",
+        "classnames": "^2.5.1",
+        "dayjs": "^1.11.13",
+        "immer": "^10.1.1",
+        "query-string": "^9.1.1",
+        "react": "^19.0.0",
+        "react-dom": "^19.0.0",
+        "react-router-dom": "^7.1.5",
+        "use-immer": "^0.11.0",
+        "use-sync-external-store": "^1.4.0",
+        "vconsole": "^3.15.1",
+        "zustand": "^5.0.3"
+    }
+}

@@ -1,0 +1,19 @@
+/*
+ * @Author: dyb-dev
+ * @Date: 2025-02-17 16:11:42
+ * @LastEditors: dyb-dev
+ * @LastEditTime: 2025-02-22 17:44:20
+ * @FilePath: /react-web-template/src/views/test/test.scss
+ * @Description: 测试页样式
+ */
+
+.test {
+    width: 100%;
+    height: 100%;
+
+    &__button {
+        width: 650px;
+        margin: 500px auto 0;
+        color: var(--text-color);
+    }
+}
