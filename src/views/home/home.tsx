@@ -2,7 +2,7 @@
  * @Author: dyb-dev
  * @Date: 2025-02-12 15:12:29
  * @LastEditors: dyb-dev
- * @LastEditTime: 2025-02-22 17:42:53
+ * @LastEditTime: 2025-02-24 15:02:20
  * @FilePath: /react-web-template/src/views/home/home.tsx
  * @Description: 首页
  */
@@ -12,6 +12,7 @@ import { memo } from "react"
 
 import react from "@/assets/image/logo/react.svg"
 import vite from "@/assets/image/logo/vite.svg"
+import { Cube } from "@/components"
 import { useNavigate } from "@/hooks"
 
 import "./home.scss"
@@ -50,6 +51,8 @@ export default memo(() => {
             >
                 前往测试页面
             </Button>
+
+            <Cube />
         </section>
     )
 
