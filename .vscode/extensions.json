@@ -28,10 +28,6 @@
         "maggie.eslint-rules-zh-plugin",
         // git-commit-plugin 插件
         "redjue.git-commit-plugin",
-        // GitHub Copilot 插件
-        "github.copilot",
-        // GitHub Copilot Chat 插件
-        "github.copilot-chat",
         // GitLens 插件
         "eamodio.gitlens",
         // Image Preview 插件
@@ -59,6 +55,6 @@
         // Todo Highlight 插件
         "wayou.vscode-todo-highlight",
         // Todo Tree 插件
-        "gruntfuggly.todo-tree",
+        "gruntfuggly.todo-tree"
     ]
 }
