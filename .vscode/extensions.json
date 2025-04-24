@@ -55,6 +55,8 @@
         // Todo Highlight 插件
         "wayou.vscode-todo-highlight",
         // Todo Tree 插件
-        "gruntfuggly.todo-tree"
+        "gruntfuggly.todo-tree",
+        // Var Conversion
+        "xiaoxintongxue.var-conv"
     ]
 }
