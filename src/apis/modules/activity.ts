@@ -2,7 +2,7 @@
  * @Author: dyb-dev
  * @Date: 2025-02-11 23:47:17
  * @LastEditors: dyb-dev
- * @LastEditTime: 2025-02-21 19:46:15
+ * @LastEditTime: 2025-04-28 00:07:35
  * @FilePath: /react-web-template/src/apis/modules/activity.ts
  * @Description: 本次活动接口模块
  */
@@ -25,20 +25,25 @@ interface IGetUserInfoApiResultData {
     userId: number
 }
 
+/** CONST: 获取用户信息 API URL */
+const GET_USER_INFO_API_URL = "/1"
+
 /**
  * FUN: 获取用户信息
  *
  * @author dyb-dev
  * @date 21/02/2025/  15:09:05
  * @param {TModifyProperties<ITestRequestConfig<IGetUserInfoApiResultData>, "test">} [testRequestConfig] 测试请求配置
+ * @param {typeof GET_USER_INFO_API_URL} [url] 路径
  * @returns {*}  {Promise<AxiosResponse<IGetUserInfoApiResultData>>} 结果数据
  */
 const getUserInfoApi = async(
-    testRequestConfig?: TModifyProperties<ITestRequestConfig<IGetUserInfoApiResultData>, "test">
+    testRequestConfig?: TModifyProperties<ITestRequestConfig<IGetUserInfoApiResultData>, "test">,
+    url: typeof GET_USER_INFO_API_URL = GET_USER_INFO_API_URL
 ): Promise<AxiosResponse<IGetUserInfoApiResultData>> => {
 
     return sendRequest({
-        url: "/1",
+        url,
         requestFn: axios.get,
         testRequestConfig
     })
@@ -57,22 +62,27 @@ interface IGetIdApiResultData {
     id: number
 }
 
+/** CONST: 获取ID API URL */
+const GET_ID_API_URL = ""
+
 /**
- * FUN: 获取id
+ * FUN: 获取ID
  *
  * @author dyb-dev
  * @date 21/02/2025/  15:09:18
  * @param {IGetIdApiParams} params 参数
  * @param {TModifyProperties<ITestRequestConfig<IGetIdApiResultData>, "test">} [testRequestConfig] 测试请求配置
+ * @param {typeof GET_ID_API_URL} [url] 路径
  * @returns {*}  {Promise<AxiosResponse<IGetIdApiResultData>>} 结果数据
  */
 const getIdApi = async(
     params: IGetIdApiParams,
-    testRequestConfig?: TModifyProperties<ITestRequestConfig<IGetIdApiResultData>, "test">
+    testRequestConfig?: TModifyProperties<ITestRequestConfig<IGetIdApiResultData>, "test">,
+    url: typeof GET_ID_API_URL = GET_ID_API_URL
 ): Promise<AxiosResponse<IGetIdApiResultData>> => {
 
     return sendRequest({
-        url: "",
+        url,
         params,
         testRequestConfig
     })
@@ -81,4 +91,4 @@ const getIdApi = async(
 
 export type { IGetUserInfoApiResultData, IGetIdApiParams, IGetIdApiResultData }
 
-export { getUserInfoApi, getIdApi }
+export { GET_USER_INFO_API_URL, getUserInfoApi, GET_ID_API_URL, getIdApi }

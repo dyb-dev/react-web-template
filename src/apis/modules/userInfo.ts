@@ -2,7 +2,7 @@
  * @Author: dyb-dev
  * @Date: 2025-02-11 23:47:17
  * @LastEditors: dyb-dev
- * @LastEditTime: 2025-02-22 17:56:01
+ * @LastEditTime: 2025-04-28 00:04:35
  * @FilePath: /react-web-template/src/apis/modules/userInfo.ts
  * @Description: 用户信息相关接口
  */
@@ -27,6 +27,9 @@ interface ILoginApiResultData {
     phoneNumber: string
 }
 
+/** CONST: 登录 API URL TODO: 接口地址修改 */
+const LOGIN_API_URL = ""
+
 /**
  * FUN: 登录
  *
@@ -34,21 +37,25 @@ interface ILoginApiResultData {
  * @date 21/02/2025/  14:08:17
  * @param {ILoginApiParams} params 参数
  * @param {TModifyProperties<ITestRequestConfig<ILoginApiResultData>, "test">} [testRequestConfig] 测试请求配置
+ * @param {typeof LOGIN_API_URL} [url] 路径
  * @returns {*}  {Promise<AxiosResponse<ILoginApiResultData>>} 结果数据
  */
 const loginApi = (
     params: ILoginApiParams,
-    testRequestConfig?: TModifyProperties<ITestRequestConfig<ILoginApiResultData>, "test">
+    testRequestConfig?: TModifyProperties<ITestRequestConfig<ILoginApiResultData>, "test">,
+    url: typeof LOGIN_API_URL = LOGIN_API_URL
 ): Promise<AxiosResponse<ILoginApiResultData>> => {
 
-    // TODO: 接口地址修改
     return sendRequest({
-        url: "",
+        url,
         params,
         testRequestConfig
     })
 
 }
+
+/** CONST: 检查登录URL TODO: 接口地址修改 */
+const CHECK_LOGIN_API_URL = "/checkLogin"
 
 /**
  * FUN: 检查登录状态
@@ -56,17 +63,23 @@ const loginApi = (
  * @author dyb-dev
  * @date 21/02/2025/  14:08:51
  * @param {TModifyProperties<ITestRequestConfig, "test">} [testRequestConfig] 测试请求配置
+ * @param {typeof CHECK_LOGIN_API_URL} [url] 路径
  * @returns {*}  {Promise<AxiosResponse>} 结果数据
  */
-const checkLoginApi = (testRequestConfig?: TModifyProperties<ITestRequestConfig, "test">): Promise<AxiosResponse> => {
+const checkLoginApi = (
+    testRequestConfig?: TModifyProperties<ITestRequestConfig, "test">,
+    url: typeof CHECK_LOGIN_API_URL = CHECK_LOGIN_API_URL
+): Promise<AxiosResponse> => {
 
-    // TODO: 接口地址修改
     return sendRequest({
-        url: "/checkLogin",
+        url,
         testRequestConfig
     })
 
 }
+
+/** CONST: 登出URL TODO: 接口地址修改 */
+const LOGOUT_API_URL = "/logout"
 
 /**
  * FUN: 登出
@@ -74,13 +87,16 @@ const checkLoginApi = (testRequestConfig?: TModifyProperties<ITestRequestConfig,
  * @author dyb-dev
  * @date 21/02/2025/  14:09:06
  * @param {TModifyProperties<ITestRequestConfig, "test">} [testRequestConfig] 测试请求配置
+ * @param {typeof LOGOUT_API_URL} [url] 路径
  * @returns {*}  {Promise<AxiosResponse>} 结果数据
  */
-const logoutApi = (testRequestConfig?: TModifyProperties<ITestRequestConfig, "test">): Promise<AxiosResponse> => {
+const logoutApi = (
+    testRequestConfig?: TModifyProperties<ITestRequestConfig, "test">,
+    url: typeof LOGOUT_API_URL = LOGOUT_API_URL
+): Promise<AxiosResponse> => {
 
-    // TODO: 接口地址修改
     return sendRequest({
-        url: "/logout",
+        url,
         testRequestConfig
     })
 
@@ -88,4 +104,4 @@ const logoutApi = (testRequestConfig?: TModifyProperties<ITestRequestConfig, "te
 
 export type { ILoginApiParams, ILoginApiResultData }
 
-export { loginApi, checkLoginApi, logoutApi }
+export { LOGIN_API_URL, loginApi, CHECK_LOGIN_API_URL, checkLoginApi, LOGOUT_API_URL, logoutApi }
