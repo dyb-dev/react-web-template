@@ -2,13 +2,13 @@
  * @Author: dyb-dev
  * @Date: 2025-02-11 22:35:30
  * @LastEditors: dyb-dev
- * @LastEditTime: 2025-02-22 15:16:20
+ * @LastEditTime: 2025-06-29 17:42:43
  * @FilePath: /react-web-template/types/index.d.ts
  * @Description: app 和 node 公共的环境类型模块
  */
 
 /** 项目信息(全局) */
-declare interface IProjectInfo {
+interface IProjectInfo {
     /** 项目版本 */
     version: string
     /** 项目最后构建时间 */
