@@ -2,7 +2,7 @@
  * @Author: dyb-dev
  * @Date: 2025-02-21 16:49:56
  * @LastEditors: dyb-dev
- * @LastEditTime: 2025-02-21 17:09:46
+ * @LastEditTime: 2025-06-29 20:46:44
  * @FilePath: /react-web-template/src/hooks/navigate/index.ts
  * @Description: 导航相关hooks函数
  */
@@ -30,7 +30,7 @@ interface IUseNavigateReturn {
 }
 
 /**
- * FUN: 导航
+ * HOOKS: 使用导航
  *
  * @author dyb-dev
  * @date 21/02/2025/  17:06:07

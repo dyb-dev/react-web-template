@@ -2,7 +2,7 @@
  * @Author: dyb-dev
  * @Date: 2025-04-28 00:08:52
  * @LastEditors: dyb-dev
- * @LastEditTime: 2025-04-28 00:45:12
+ * @LastEditTime: 2025-06-29 20:47:05
  * @FilePath: /react-web-template/src/hooks/swr/activity.ts
  * @Description: 本次活动swr相关hooks函数
  */
@@ -15,7 +15,7 @@ import type { IGetIdApiParams, IGetIdApiResultData, IGetUserInfoApiResultData } 
 import type { AxiosResponse } from "axios"
 
 /**
- * FUN: 使用获取用户信息
+ * HOOKS: 使用获取用户信息
  *
  * @author dyb-dev
  * @date 28/04/2025/  00:13:52
@@ -63,7 +63,7 @@ const useGetUserInfo = () => {
 }
 
 /**
- * FUN: 使用获取ID
+ * HOOKS: 使用获取ID
  *
  * @author dyb-dev
  * @date 28/04/2025/  00:10:01
