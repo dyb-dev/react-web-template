@@ -2,7 +2,7 @@
  * @Author: dyb-dev
  * @Date: 2025-02-11 22:35:30
  * @LastEditors: dyb-dev
- * @LastEditTime: 2025-02-22 15:16:27
+ * @LastEditTime: 2025-07-21 01:10:51
  * @FilePath: /react-web-template/vite/vite.dev.config.ts
  * @Description: vite开发环境配置
  */
@@ -24,7 +24,7 @@ import type { UserConfig } from "vite"
 const setupDevConfig = (param: ISetupEnvConfigParam): UserConfig => {
 
     const { projectRootDir, port, browserOpenUrl, env } = param
-    const { VITE_PROXY_DOMAIN } = env
+    const { VITE_API_BASE_PATH, VITE_PROXY_DOMAIN } = env
 
     return {
         server: {
@@ -38,7 +38,7 @@ const setupDevConfig = (param: ISetupEnvConfigParam): UserConfig => {
             open: browserOpenUrl,
             // 请求代理配置
             proxy: {
-                "/posts": {
+                [VITE_API_BASE_PATH]: {
                     // 代理目标服务器
                     target: VITE_PROXY_DOMAIN,
                     // 解决跨域
