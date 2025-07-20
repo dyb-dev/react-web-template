@@ -2,7 +2,7 @@
  * @Author: dyb-dev
  * @Date: 2025-02-20 12:50:42
  * @LastEditors: dyb-dev
- * @LastEditTime: 2025-02-22 15:21:55
+ * @LastEditTime: 2025-07-20 13:09:18
  * @FilePath: /react-web-template/src/theme/index.ts
  * @Description: 主题模块
  */
@@ -63,10 +63,7 @@ const updateTheme = (isMatchesDark: boolean) => {
 
     theme = isMatchesDark ? ETheme.Dark : ETheme.Light
 
-    // 文档根元素的类列表
-    const _classList = document.documentElement.classList
-
-    isMatchesDark ? _classList.add(THEME_DARK_CLASS_NAME) : _classList.remove(THEME_DARK_CLASS_NAME)
+    document.documentElement.classList.toggle(THEME_DARK_CLASS_NAME, isMatchesDark)
 
 }
 
