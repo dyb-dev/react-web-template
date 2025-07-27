@@ -2,7 +2,7 @@
  * @Author: dyb-dev
  * @Date: 2025-02-11 23:45:05
  * @LastEditors: dyb-dev
- * @LastEditTime: 2025-02-11 23:45:36
+ * @LastEditTime: 2025-07-28 02:02:21
  * @FilePath: /react-web-template/src/utils/env/index.ts
  * @Description: 环境相关工具函数
  */
@@ -18,13 +18,27 @@ import { getCurrentUrlQueryValue } from "@/utils"
  */
 const isDevEnv = (): boolean => import.meta.env.DEV
 
+/** LET: 是否已启用调试模式 */
+let _debug: boolean = false
+
 /**
- * FUN: 是否启用调试
+ * FUN: 是否已启用调试模式
  *
  * @author dyb-dev
  * @date 23/05/2023/  13:58:40
- * @returns {boolean} 是否开启debug
+ * @returns {boolean} 是否已启用调试模式
  */
-const isEnableDebug = (): boolean => getCurrentUrlQueryValue("debug") === "1"
+const isEnableDebug = (): boolean => {
+
+    // 未启用调试模式时
+    if (!_debug) {
+
+        _debug = getCurrentUrlQueryValue("debug") === "1"
+
+    }
+
+    return _debug
+
+}
 
 export { isDevEnv, isEnableDebug }
