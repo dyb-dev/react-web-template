@@ -2,7 +2,7 @@
  * @Author: dyb-dev
  * @Date: 2025-07-28 13:29:39
  * @LastEditors: dyb-dev
- * @LastEditTime: 2025-07-28 13:34:13
+ * @LastEditTime: 2025-07-29 01:22:10
  * @FilePath: /react-web-template/src/setup/theme.ts
  * @Description: 初始化主题
  */
@@ -20,6 +20,12 @@ let _isSetup = false
  */
 export const setupTheme = () => {
 
+    /** HOOKS: 使用主题状态管理 */
+    // eslint-disable-next-line react-hooks/rules-of-hooks
+    const { updateTheme } = useThemeStore(({ updateTheme }) => ({
+        updateTheme
+    }))
+
     /** 已经完成初始化时 */
     if (_isSetup) {
 
@@ -35,12 +41,6 @@ export const setupTheme = () => {
         return
 
     }
-
-    /** HOOKS: 使用主题状态管理 */
-    // eslint-disable-next-line react-hooks/rules-of-hooks
-    const { updateTheme } = useThemeStore(({ updateTheme }) => ({
-        updateTheme
-    }))
 
     /**
      * FUN: 更新主题
