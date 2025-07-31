@@ -2,7 +2,7 @@
  * @Author: dyb-dev
  * @Date: 2025-02-11 23:45:05
  * @LastEditors: v_zhgtzhong
- * @LastEditTime: 2025-08-01 00:47:37
+ * @LastEditTime: 2025-08-01 01:01:51
  * @FilePath: /react-web-template/src/utils/url/index.ts
  * @Description: url相关工具函数
  */
@@ -219,7 +219,7 @@ export const toAbsoluteUrl = (options: IToAbsoluteUrlOptions): string => {
 
     let _url = [_urlOrigin, _basePath, _relativePath].filter(Boolean).join("/")
 
-    if (!isAbsoluteUrl(relativePath)) {
+    if (!isAbsoluteUrl(_url)) {
 
         _url = `/${_url}`
 
