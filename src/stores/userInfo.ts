@@ -1,8 +1,8 @@
 /*
  * @Author: dyb-dev
  * @Date: 2025-02-12 21:43:16
- * @LastEditors: dyb-dev
- * @LastEditTime: 2025-02-22 15:06:53
+ * @LastEditors: v_zhgtzhong
+ * @LastEditTime: 2025-08-01 00:41:57
  * @FilePath: /react-web-template/src/stores/userInfo.ts
  * @Description: 用户信息状态管理
  */
@@ -19,7 +19,7 @@ import type { ILoginApiParams, ILoginApiResultData } from "@/apis"
 import type { AxiosResponse } from "axios"
 
 /** Store 状态 */
-interface IUserInfoStoreState {
+export interface IUserInfoStoreState {
     /** 是否登录成功 */
     isLogin: boolean
     /** 是否已检查登录 */
@@ -31,7 +31,7 @@ interface IUserInfoStoreState {
 }
 
 /** Store 动作 */
-interface IUserInfoStoreAction {
+export interface IUserInfoStoreAction {
     /** 登录 */
     login: (params: ILoginApiParams) => Promise<AxiosResponse<ILoginApiResultData>>
     /** 检查登录 */
@@ -41,7 +41,7 @@ interface IUserInfoStoreAction {
 }
 
 /** Store 实例 */
-const useUserInfoStore = createWithEqualityFn<IUserInfoStoreState & IUserInfoStoreAction>()(
+export const useUserInfoStore = createWithEqualityFn<IUserInfoStoreState & IUserInfoStoreAction>()(
     // 允许订阅指定状态中间件
     subscribeWithSelector(
         // 允许持久化储存中间件
@@ -158,7 +158,3 @@ const useUserInfoStore = createWithEqualityFn<IUserInfoStoreState & IUserInfoSto
     ),
     shallow
 )
-
-export type { IUserInfoStoreState, IUserInfoStoreAction }
-
-export { useUserInfoStore }

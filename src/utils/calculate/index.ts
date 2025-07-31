@@ -1,8 +1,8 @@
 /*
  * @Author: dyb-dev
  * @Date: 2025-02-11 23:45:05
- * @LastEditors: dyb-dev
- * @LastEditTime: 2025-02-22 15:16:33
+ * @LastEditors: v_zhgtzhong
+ * @LastEditTime: 2025-08-01 00:42:22
  * @FilePath: /react-web-template/src/utils/calculate/index.ts
  * @Description: 计算相关工具函数
  */
@@ -17,7 +17,7 @@
  * @param {number} [decimalPlaces=3] - 保留的小数位数
  * @returns {*}  {string} 转换后的 vw 值
  */
-const pxToVw = (px: string | number, baseWidth: number = 750, decimalPlaces: number = 3): string => {
+export const pxToVw = (px: string | number, baseWidth: number = 750, decimalPlaces: number = 3): string => {
 
     // 解析字符串，将其转换为数字
     const _numericPX = typeof px === "string" ? parseFloat(px) : px
@@ -34,5 +34,3 @@ const pxToVw = (px: string | number, baseWidth: number = 750, decimalPlaces: num
     return (_numericPX / baseWidth * 100).toFixed(decimalPlaces) + "vw"
 
 }
-
-export { pxToVw }

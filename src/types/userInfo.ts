@@ -1,14 +1,14 @@
 /*
  * @Author: dyb-dev
  * @Date: 2025-02-11 23:19:25
- * @LastEditors: dyb-dev
- * @LastEditTime: 2025-02-22 15:16:32
+ * @LastEditors: v_zhgtzhong
+ * @LastEditTime: 2025-08-01 00:42:16
  * @FilePath: /react-web-template/src/types/userInfo.ts
  * @Description: 用户信息类型模块
  */
 
 /** 性别类型枚举 */
-enum EGenderType {
+export const enum EGenderType {
     /** 男 */
     Man = 1,
     /** 女 */
@@ -16,7 +16,7 @@ enum EGenderType {
 }
 
 /** 证件类型枚举 */
-enum ECertificatesType {
+export const enum ECertificatesType {
     /** 身份证 */
     IdCard = 1,
     /** 军人证 */
@@ -38,5 +38,3 @@ enum ECertificatesType {
     /** 居民户口薄 */
     ResidentAccountBook
 }
-
-export { EGenderType, ECertificatesType }

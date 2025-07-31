@@ -1,8 +1,8 @@
 /*
  * @Author: dyb-dev
  * @Date: 2025-02-22 15:10:22
- * @LastEditors: dyb-dev
- * @LastEditTime: 2025-02-22 15:12:07
+ * @LastEditors: v_zhgtzhong
+ * @LastEditTime: 2025-08-01 00:41:47
  * @FilePath: /react-web-template/src/stores/activity.ts
  * @Description: 当前活动状态管理
  */
@@ -14,16 +14,16 @@ import { createWithEqualityFn } from "zustand/traditional"
 import { shallow } from "zustand/vanilla/shallow"
 
 /** Store 状态 */
-interface IActivityStoreState {
+export interface IActivityStoreState {
     /** 数量 */
     count: number
 }
 
 /** Store 动作 */
-interface IActivityStoreAction {}
+export interface IActivityStoreAction {}
 
 /** Store 实例 */
-const useActivityStore = createWithEqualityFn<IActivityStoreState & IActivityStoreAction>()(
+export const useActivityStore = createWithEqualityFn<IActivityStoreState & IActivityStoreAction>()(
     // 允许订阅指定状态中间件
     subscribeWithSelector(
         // 允许持久化储存中间件
@@ -52,7 +52,3 @@ const useActivityStore = createWithEqualityFn<IActivityStoreState & IActivitySto
     ),
     shallow
 )
-
-export type { IActivityStoreState, IActivityStoreAction }
-
-export { useActivityStore }

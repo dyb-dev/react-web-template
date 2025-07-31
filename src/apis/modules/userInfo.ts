@@ -1,8 +1,8 @@
 /*
  * @Author: dyb-dev
  * @Date: 2025-02-11 23:47:17
- * @LastEditors: dyb-dev
- * @LastEditTime: 2025-04-28 00:04:35
+ * @LastEditors: v_zhgtzhong
+ * @LastEditTime: 2025-08-01 00:40:21
  * @FilePath: /react-web-template/src/apis/modules/userInfo.ts
  * @Description: 用户信息相关接口
  */
@@ -12,7 +12,7 @@ import { sendRequest } from "../request"
 import type { AxiosResponse } from "axios"
 
 /** 登录 参数 */
-interface ILoginApiParams {
+export interface ILoginApiParams {
     /** 用户手机号 */
     phoneNumber: string
     /** 用户密码 */
@@ -20,7 +20,7 @@ interface ILoginApiParams {
 }
 
 /** 登录 结果数据 */
-interface ILoginApiResultData {
+export interface ILoginApiResultData {
     /** 昵称 */
     nickName: string
     /** 绑定手机号 */
@@ -28,7 +28,7 @@ interface ILoginApiResultData {
 }
 
 /** CONST: 登录 API URL TODO: 接口地址修改 */
-const LOGIN_API_URL = ""
+export const LOGIN_API_URL = ""
 
 /**
  * FUN: 登录
@@ -40,7 +40,7 @@ const LOGIN_API_URL = ""
  * @param {typeof LOGIN_API_URL} [url] 路径
  * @returns {*}  {Promise<AxiosResponse<ILoginApiResultData>>} 结果数据
  */
-const loginApi = (
+export const loginApi = (
     params: ILoginApiParams,
     testRequestConfig?: TModifyProperties<ITestRequestConfig<ILoginApiResultData>, "test">,
     url: typeof LOGIN_API_URL = LOGIN_API_URL
@@ -55,7 +55,7 @@ const loginApi = (
 }
 
 /** CONST: 检查登录URL TODO: 接口地址修改 */
-const CHECK_LOGIN_API_URL = "/checkLogin"
+export const CHECK_LOGIN_API_URL = "/checkLogin"
 
 /**
  * FUN: 检查登录状态
@@ -66,7 +66,7 @@ const CHECK_LOGIN_API_URL = "/checkLogin"
  * @param {typeof CHECK_LOGIN_API_URL} [url] 路径
  * @returns {*}  {Promise<AxiosResponse>} 结果数据
  */
-const checkLoginApi = (
+export const checkLoginApi = (
     testRequestConfig?: TModifyProperties<ITestRequestConfig, "test">,
     url: typeof CHECK_LOGIN_API_URL = CHECK_LOGIN_API_URL
 ): Promise<AxiosResponse> => {
@@ -79,7 +79,7 @@ const checkLoginApi = (
 }
 
 /** CONST: 登出URL TODO: 接口地址修改 */
-const LOGOUT_API_URL = "/logout"
+export const LOGOUT_API_URL = "/logout"
 
 /**
  * FUN: 登出
@@ -90,7 +90,7 @@ const LOGOUT_API_URL = "/logout"
  * @param {typeof LOGOUT_API_URL} [url] 路径
  * @returns {*}  {Promise<AxiosResponse>} 结果数据
  */
-const logoutApi = (
+export const logoutApi = (
     testRequestConfig?: TModifyProperties<ITestRequestConfig, "test">,
     url: typeof LOGOUT_API_URL = LOGOUT_API_URL
 ): Promise<AxiosResponse> => {
@@ -101,7 +101,3 @@ const logoutApi = (
     })
 
 }
-
-export type { ILoginApiParams, ILoginApiResultData }
-
-export { LOGIN_API_URL, loginApi, CHECK_LOGIN_API_URL, checkLoginApi, LOGOUT_API_URL, logoutApi }

@@ -1,8 +1,8 @@
 /*
  * @Author: dyb-dev
  * @Date: 2025-02-16 20:48:15
- * @LastEditors: dyb-dev
- * @LastEditTime: 2025-02-22 14:56:32
+ * @LastEditors: v_zhgtzhong
+ * @LastEditTime: 2025-08-01 00:41:32
  * @FilePath: /react-web-template/src/router/index.tsx
  * @Description: 路由模块
  */
@@ -49,7 +49,7 @@ routes = [
 const NavigateToHome = () => <Navigate to={`${VITE_HOME_ROUTE}${useLocation().search ?? ""}`} replace />
 
 /** CONST: 路由实例 */
-const router = createBrowserRouter(
+export const router = createBrowserRouter(
     [
         ...routes.map(({ Component, ...route }) => ({
             ...route,
@@ -75,5 +75,3 @@ const router = createBrowserRouter(
         basename: VITE_BASE_PATH
     }
 )
-
-export { router }

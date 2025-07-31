@@ -1,8 +1,8 @@
 /*
  * @Author: dyb-dev
  * @Date: 2025-02-11 23:47:17
- * @LastEditors: dyb-dev
- * @LastEditTime: 2025-04-28 00:07:35
+ * @LastEditors: v_zhgtzhong
+ * @LastEditTime: 2025-08-01 00:39:52
  * @FilePath: /react-web-template/src/apis/modules/activity.ts
  * @Description: 本次活动接口模块
  */
@@ -14,7 +14,7 @@ import { sendRequest } from "../request"
 import type { AxiosResponse } from "axios"
 
 /** 获取用户信息的结果数据 */
-interface IGetUserInfoApiResultData {
+export interface IGetUserInfoApiResultData {
     /** 内容 */
     body: string
     /** id */
@@ -26,7 +26,7 @@ interface IGetUserInfoApiResultData {
 }
 
 /** CONST: 获取用户信息 API URL */
-const GET_USER_INFO_API_URL = "/1"
+export const GET_USER_INFO_API_URL = "/1"
 
 /**
  * FUN: 获取用户信息
@@ -37,7 +37,7 @@ const GET_USER_INFO_API_URL = "/1"
  * @param {typeof GET_USER_INFO_API_URL} [url] 路径
  * @returns {*}  {Promise<AxiosResponse<IGetUserInfoApiResultData>>} 结果数据
  */
-const getUserInfoApi = async(
+export const getUserInfoApi = async(
     testRequestConfig?: TModifyProperties<ITestRequestConfig<IGetUserInfoApiResultData>, "test">,
     url: typeof GET_USER_INFO_API_URL = GET_USER_INFO_API_URL
 ): Promise<AxiosResponse<IGetUserInfoApiResultData>> => {
@@ -51,19 +51,19 @@ const getUserInfoApi = async(
 }
 
 /** 获取id的参数 */
-interface IGetIdApiParams {
+export interface IGetIdApiParams {
     /** 用户唯一标识 */
     userId: number
 }
 
 /** 获取id的结果数据 */
-interface IGetIdApiResultData {
+export interface IGetIdApiResultData {
     /** id */
     id: number
 }
 
 /** CONST: 获取ID API URL */
-const GET_ID_API_URL = ""
+export const GET_ID_API_URL = ""
 
 /**
  * FUN: 获取ID
@@ -75,7 +75,7 @@ const GET_ID_API_URL = ""
  * @param {typeof GET_ID_API_URL} [url] 路径
  * @returns {*}  {Promise<AxiosResponse<IGetIdApiResultData>>} 结果数据
  */
-const getIdApi = async(
+export const getIdApi = async(
     params: IGetIdApiParams,
     testRequestConfig?: TModifyProperties<ITestRequestConfig<IGetIdApiResultData>, "test">,
     url: typeof GET_ID_API_URL = GET_ID_API_URL
@@ -88,7 +88,3 @@ const getIdApi = async(
     })
 
 }
-
-export type { IGetUserInfoApiResultData, IGetIdApiParams, IGetIdApiResultData }
-
-export { GET_USER_INFO_API_URL, getUserInfoApi, GET_ID_API_URL, getIdApi }

@@ -1,8 +1,8 @@
 /*
  * @Author: dyb-dev
  * @Date: 2025-02-11 23:20:17
- * @LastEditors: dyb-dev
- * @LastEditTime: 2025-02-22 15:16:23
+ * @LastEditors: v_zhgtzhong
+ * @LastEditTime: 2025-08-01 00:42:03
  * @FilePath: /react-web-template/src/sw/index.ts
  * @Description: Service Worker 模块
  */
@@ -13,7 +13,7 @@
  * @author dyb-dev
  * @date 24/04/2024/  10:54:36
  */
-const setupServiceWorker = async() => {
+export const setupServiceWorker = async() => {
 
     try {
 
@@ -43,5 +43,3 @@ const setupServiceWorker = async() => {
     }
 
 }
-
-export { setupServiceWorker }

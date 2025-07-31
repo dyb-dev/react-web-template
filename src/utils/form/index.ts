@@ -1,8 +1,8 @@
 /*
  * @Author: dyb-dev
  * @Date: 2025-02-11 23:45:05
- * @LastEditors: dyb-dev
- * @LastEditTime: 2025-02-22 15:16:34
+ * @LastEditors: v_zhgtzhong
+ * @LastEditTime: 2025-08-01 00:43:09
  * @FilePath: /react-web-template/src/utils/form/index.ts
  * @Description: 表单相关工具函数
  */
@@ -18,7 +18,7 @@ export * from "./identityCard"
  * @param {string} phone - 手机号
  * @returns {*}  {boolean} - 是否为手机号
  */
-const isPhoneNumber = (phone: string): boolean => /^1[3456789]\d{9}$/.test(phone)
+export const isPhoneNumber = (phone: string): boolean => /^1[3456789]\d{9}$/.test(phone)
 
 /**
  * FUN: 是否为邮箱
@@ -28,6 +28,4 @@ const isPhoneNumber = (phone: string): boolean => /^1[3456789]\d{9}$/.test(phone
  * @param {string} email - 邮箱
  * @returns {*}  {boolean} - 是否为邮箱
  */
-const isEmail = (email: string): boolean => /^[a-zA-Z0-9_-]+@[a-zA-Z0-9_-]+(\.[a-zA-Z0-9_-]+)+$/.test(email)
-
-export { isPhoneNumber, isEmail }
+export const isEmail = (email: string): boolean => /^[a-zA-Z0-9_-]+@[a-zA-Z0-9_-]+(\.[a-zA-Z0-9_-]+)+$/.test(email)

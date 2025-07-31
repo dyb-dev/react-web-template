@@ -1,8 +1,8 @@
 /*
  * @Author: dyb-dev
  * @Date: 2025-02-11 22:35:30
- * @LastEditors: dyb-dev
- * @LastEditTime: 2025-07-21 01:10:51
+ * @LastEditors: v_zhgtzhong
+ * @LastEditTime: 2025-08-01 00:44:52
  * @FilePath: /react-web-template/vite/vite.dev.config.ts
  * @Description: vite开发环境配置
  */
@@ -21,7 +21,7 @@ import type { UserConfig } from "vite"
  * @param {ISetupEnvConfigParam} param - 参数
  * @returns {*}  {UserConfig}
  */
-const setupDevConfig = (param: ISetupEnvConfigParam): UserConfig => {
+export const setupDevConfig = (param: ISetupEnvConfigParam): UserConfig => {
 
     const { projectRootDir, port, browserOpenUrl, env } = param
     const { VITE_API_BASE_PATH, VITE_PROXY_DOMAIN } = env
@@ -69,5 +69,3 @@ const setupDevConfig = (param: ISetupEnvConfigParam): UserConfig => {
     }
 
 }
-
-export { setupDevConfig }

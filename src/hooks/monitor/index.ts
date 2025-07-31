@@ -1,8 +1,8 @@
 /*
  * @Author: dyb-dev
  * @Date: 2025-02-12 15:47:41
- * @LastEditors: dyb-dev
- * @LastEditTime: 2025-02-12 15:47:54
+ * @LastEditors: v_zhgtzhong
+ * @LastEditTime: 2025-08-01 00:41:03
  * @FilePath: /react-web-template/src/hooks/monitor/index.ts
  * @Description: 监控相关hooks函数
  */
@@ -17,7 +17,7 @@ import { isIos } from "@/utils"
  * @param {string} imgSelectorName - 图片选择器
  * @param {() => void} callback - 长按保存结束回调
  */
-const useMonitorImgPressSave = (imgSelectorName: string, callback: () => void) => {
+export const useMonitorImgPressSave = (imgSelectorName: string, callback: () => void) => {
 
     try {
 
@@ -139,5 +139,3 @@ const useMonitorImgPressSave = (imgSelectorName: string, callback: () => void) =
     }
 
 }
-
-export { useMonitorImgPressSave }

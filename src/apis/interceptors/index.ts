@@ -1,8 +1,8 @@
 /*
  * @Author: dyb-dev
  * @Date: 2025-02-11 23:47:17
- * @LastEditors: dyb-dev
- * @LastEditTime: 2025-02-21 19:39:38
+ * @LastEditors: v_zhgtzhong
+ * @LastEditTime: 2025-08-01 00:39:19
  * @FilePath: /react-web-template/src/apis/interceptors/index.ts
  * @Description: Api 拦截器模块
  */
@@ -15,10 +15,8 @@ import { setupResponseInterceptor } from "./response"
  * @author dyb-dev
  * @date 17/10/2024/  11:43:36
  */
-const setupApiInterceptor = () => {
+export const setupApiInterceptor = () => {
 
     setupResponseInterceptor()
 
 }
-
-export { setupApiInterceptor }

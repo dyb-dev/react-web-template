@@ -1,8 +1,8 @@
 /*
  * @Author: dyb-dev
  * @Date: 2025-04-28 00:08:52
- * @LastEditors: dyb-dev
- * @LastEditTime: 2025-06-29 20:47:05
+ * @LastEditors: v_zhgtzhong
+ * @LastEditTime: 2025-08-01 00:41:23
  * @FilePath: /react-web-template/src/hooks/swr/activity.ts
  * @Description: 本次活动swr相关hooks函数
  */
@@ -21,7 +21,7 @@ import type { AxiosResponse } from "axios"
  * @date 28/04/2025/  00:13:52
  * @returns {*} 返回结果
  */
-const useGetUserInfo = () => {
+export const useGetUserInfo = () => {
 
     const { data: result, ...other } = useSWR<
         AxiosResponse<IGetUserInfoApiResultData>,
@@ -70,7 +70,7 @@ const useGetUserInfo = () => {
  * @param {IGetIdApiParams} params 获取ID参数
  * @returns {*} 返回结果
  */
-const useGetId = (params: IGetIdApiParams) => {
+export const useGetId = (params: IGetIdApiParams) => {
 
     const { data: result, ...other } = useSWR<
         AxiosResponse<IGetIdApiResultData>,
@@ -108,5 +108,3 @@ const useGetId = (params: IGetIdApiParams) => {
     }
 
 }
-
-export { useGetUserInfo, useGetId }

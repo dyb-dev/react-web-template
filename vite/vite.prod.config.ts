@@ -1,8 +1,8 @@
 /*
  * @Author: dyb-dev
  * @Date: 2025-02-11 22:35:30
- * @LastEditors: dyb-dev
- * @LastEditTime: 2025-02-22 15:16:28
+ * @LastEditors: v_zhgtzhong
+ * @LastEditTime: 2025-08-01 00:45:00
  * @FilePath: /react-web-template/vite/vite.prod.config.ts
  * @Description: vite生产环境配置
  */
@@ -26,7 +26,7 @@ import type { PluginOption, UserConfig } from "vite"
  * @param {ISetupEnvConfigParam} param - 参数
  * @returns {*}  {UserConfig}
  */
-const setupProdConfig = (param: ISetupEnvConfigParam): UserConfig => {
+export const setupProdConfig = (param: ISetupEnvConfigParam): UserConfig => {
 
     const { projectRootDir, port, browserOpenUrl, env } = param
     const {
@@ -145,5 +145,3 @@ const setupProdConfig = (param: ISetupEnvConfigParam): UserConfig => {
     }
 
 }
-
-export { setupProdConfig }
