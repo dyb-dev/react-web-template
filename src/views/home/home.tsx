@@ -17,7 +17,7 @@ import { useNavigate } from "@/hooks"
 
 import "./home.scss"
 
-export default memo(() => {
+export default memo(function Home() {
 
     const { navigate } = useNavigate()
 

@@ -1,8 +1,8 @@
 /*
  * @Author: dyb-dev
  * @Date: 2025-02-20 17:04:04
- * @LastEditors: dyb-dev
- * @LastEditTime: 2025-02-20 18:34:09
+ * @LastEditors: v_zhgtzhong
+ * @LastEditTime: 2025-08-01 10:27:25
  * @FilePath: /react-web-template/src/views/not-found/not-found.tsx
  * @Description: 404页面
  */
@@ -13,7 +13,7 @@ import { useNavigate } from "react-router-dom"
 
 import "./not-found.scss"
 
-export default memo(() => {
+export default memo(function NotFound() {
 
     const navigate = useNavigate()
 

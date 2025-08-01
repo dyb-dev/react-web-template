@@ -1,8 +1,8 @@
 /*
  * @Author: dyb-dev
  * @Date: 2025-02-16 22:52:14
- * @LastEditors: dyb-dev
- * @LastEditTime: 2025-02-22 17:56:29
+ * @LastEditors: v_zhgtzhong
+ * @LastEditTime: 2025-08-01 10:27:20
  * @FilePath: /react-web-template/src/views/login/login.tsx
  * @Description: 登录页面
  */
@@ -33,7 +33,7 @@ interface IFormData {
     password: string
 }
 
-export default memo(() => {
+export default memo(function Login() {
 
     // 用于导航
     const { navigate, back } = useNavigate()

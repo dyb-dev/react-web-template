@@ -1,8 +1,8 @@
 /*
  * @Author: dyb-dev
  * @Date: 2025-02-19 12:01:01
- * @LastEditors: dyb-dev
- * @LastEditTime: 2025-02-22 15:06:21
+ * @LastEditors: v_zhgtzhong
+ * @LastEditTime: 2025-08-01 10:27:01
  * @FilePath: /react-web-template/src/router/guard/LoginGuard.tsx
  * @Description: 登录守卫组件
  */
@@ -29,7 +29,7 @@ export interface ILoginGuardProps {
     children: ReactElement
 }
 
-export const LoginGuard = memo(({ children }: ILoginGuardProps) => {
+export const LoginGuard = memo(function LoginGuard({ children }: ILoginGuardProps) {
 
     // 获取当前路由信息
     const { pathname, search } = useLocation()

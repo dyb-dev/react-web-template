@@ -1,8 +1,8 @@
 /*
  * @Author: dyb-dev
  * @Date: 2025-02-16 22:52:14
- * @LastEditors: dyb-dev
- * @LastEditTime: 2025-02-22 17:44:06
+ * @LastEditors: v_zhgtzhong
+ * @LastEditTime: 2025-08-01 10:27:29
  * @FilePath: /react-web-template/src/views/test/test.tsx
  * @Description: 登录页面
  */
@@ -21,7 +21,7 @@ interface ISearchParams {
     test: string
 }
 
-export default memo(() => {
+export default memo(function Test() {
 
     const { back } = useNavigate()
 

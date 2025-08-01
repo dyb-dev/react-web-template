@@ -1,8 +1,8 @@
 /*
  * @Author: dyb-dev
  * @Date: 2025-02-22 14:05:37
- * @LastEditors: dyb-dev
- * @LastEditTime: 2025-02-22 15:39:35
+ * @LastEditors: v_zhgtzhong
+ * @LastEditTime: 2025-08-01 10:27:03
  * @FilePath: /react-web-template/src/components/Cube/Cube.tsx
  * @Description: 立方体组件
  */
@@ -15,7 +15,7 @@ import { toAssetsAbsoluteUrl } from "@/utils"
 
 import "./Cube.scss"
 
-export const Cube = memo(() => {
+export const Cube = memo(function Cube() {
 
     /** REF: 大立方体数据列表 */
     const largeCubeFaces = [
