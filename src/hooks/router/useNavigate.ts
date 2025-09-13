@@ -1,10 +1,10 @@
 /*
  * @Author: dyb-dev
- * @Date: 2025-02-21 16:49:56
- * @LastEditors: v_zhgtzhong
- * @LastEditTime: 2025-08-01 00:41:14
- * @FilePath: /react-web-template/src/hooks/navigate/index.ts
- * @Description: 导航相关hooks函数
+ * @Date: 2025-09-11 03:53:38
+ * @LastEditors: dyb-dev
+ * @LastEditTime: 2025-09-13 14:10:33
+ * @FilePath: /react-web-template/src/hooks/router/useNavigate.ts
+ * @Description: 使用导航
  */
 
 import { useNavigate as useRouterNavigate } from "react-router-dom"

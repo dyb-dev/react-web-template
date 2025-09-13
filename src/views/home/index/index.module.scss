@@ -1,0 +1,26 @@
+/*
+ * @Author: dyb-dev
+ * @Date: 2025-09-11 03:13:03
+ * @LastEditors: dyb-dev
+ * @LastEditTime: 2025-09-13 14:19:45
+ * @FilePath: /react-web-template/src/views/home/index/index.module.scss
+ * @Description: index 子路由样式
+ */
+
+.index {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    border: 1px solid #04a3ff;
+
+    &__title {
+        margin-top: 100px;
+        margin-bottom: 100px;
+        color: var(--text-color);
+        font-size: 44px;
+        text-align: center;
+    }
+}

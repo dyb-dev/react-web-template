@@ -1,8 +1,8 @@
 /*
  * @Author: dyb-dev
- * @Date: 2025-02-19 12:01:01
- * @LastEditors: v_zhgtzhong
- * @LastEditTime: 2025-08-01 10:27:01
+ * @Date: 2025-09-13 00:42:53
+ * @LastEditors: dyb-dev
+ * @LastEditTime: 2025-09-13 14:13:15
  * @FilePath: /react-web-template/src/router/guard/LoginGuard.tsx
  * @Description: 登录守卫组件
  */
@@ -10,7 +10,8 @@
 import { memo, useEffect } from "react"
 import { Navigate, useLocation } from "react-router-dom"
 
-import { LoadBox } from "@/components"
+import { LoadingWrapper } from "@/components"
+import { useRoute } from "@/hooks"
 import { useUserInfoStore } from "@/stores"
 import { mergeUrlQuery } from "@/utils"
 
@@ -18,10 +19,7 @@ import type { ReactElement } from "react"
 import type { To } from "react-router-dom"
 
 /** CONST: 环境变量 */
-const { VITE_LOGIN_ROUTE, VITE_NEED_LOGIN_ROUTES } = __PROJECT_INFO__.env
-
-/** CONST: 需要登录的路由列表 */
-const NEED_LOGIN_ROUTE_LIST = VITE_NEED_LOGIN_ROUTES.split(",")
+const { VITE_LOGIN_ROUTE } = __PROJECT_INFO__.env
 
 /** 组件Props */
 export interface ILoginGuardProps {
@@ -31,9 +29,13 @@ export interface ILoginGuardProps {
 
 export const LoginGuard = memo(function LoginGuard({ children }: ILoginGuardProps) {
 
-    // 获取当前路由信息
+    /** HOOKS: 使用路由 */
+    const currentRoute = useRoute()
+
+    /** HOOKS: 使用位置 */
     const { pathname, search } = useLocation()
-    // 获取用户登录状态
+
+    /** HOOKS: 用户信息状态 */
     const { isCheckedLogin, isLogin, checkLogin } = useUserInfoStore(({ isCheckedLogin, isLogin, checkLogin }) => ({
         isCheckedLogin,
         isLogin,
@@ -51,23 +53,26 @@ export const LoginGuard = memo(function LoginGuard({ children }: ILoginGuardProp
     // 避免未完成登录检测时渲染
     if (!isCheckedLogin) {
 
-        return <LoadBox />
+        return <LoadingWrapper />
 
     }
 
-    // 如果当前路由为需要登录的路由且未登录
-    if (NEED_LOGIN_ROUTE_LIST.includes(pathname) && !isLogin) {
+    /** 当前路由是否需要登录 */
+    const requireAuth = currentRoute?.handle?.requireAuth ?? false
 
-        // 跳转登录页路由配置
-        const _to: To = {
-            pathname: VITE_LOGIN_ROUTE,
-            search: mergeUrlQuery(search, { redirectRoute: pathname })
-        }
+    // 如果当前路由不需要登录或已登录
+    if (!requireAuth || isLogin) {
 
-        return <Navigate to={_to} replace />
+        return children
 
     }
 
-    return children
+    // 跳转登录页路由配置
+    const to: To = {
+        pathname: VITE_LOGIN_ROUTE,
+        search: mergeUrlQuery(search, { redirectRoute: pathname })
+    }
+
+    return <Navigate to={to} replace />
 
 })

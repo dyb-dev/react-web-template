@@ -1,8 +1,8 @@
 /*
  * @Author: dyb-dev
  * @Date: 2025-02-20 17:04:04
- * @LastEditors: v_zhgtzhong
- * @LastEditTime: 2025-08-01 10:27:25
+ * @LastEditors: dyb-dev
+ * @LastEditTime: 2025-09-13 14:42:06
  * @FilePath: /react-web-template/src/views/not-found/not-found.tsx
  * @Description: 404页面
  */
@@ -11,9 +11,9 @@ import { ResultPage } from "antd-mobile/2x"
 import { memo } from "react"
 import { useNavigate } from "react-router-dom"
 
-import "./not-found.scss"
+import styles from "./not-found.module.scss"
 
-export default memo(function NotFound() {
+export default memo(function NotFound () {
 
     const navigate = useNavigate()
 
@@ -33,7 +33,7 @@ export default memo(function NotFound() {
 
     return (
         <ResultPage
-            className="not-found"
+            className={styles["not-found"]}
             status="error"
             title="页面未找到"
             description="您访问的页面不存在或已被删除"

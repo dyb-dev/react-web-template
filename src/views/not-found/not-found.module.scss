@@ -1,0 +1,21 @@
+/*
+ * @Author: dyb-dev
+ * @Date: 2025-02-20 17:36:04
+ * @LastEditors: dyb-dev
+ * @LastEditTime: 2025-09-14 01:21:20
+ * @FilePath: /react-web-template/src/views/not-found/not-found.module.scss
+ * @Description: 404页面样式
+ */
+
+.not-found {
+    :global {
+        .adm-result-page-bg {
+            background: var(--danger-color);
+        }
+
+        .adm-button-primary {
+            background: var(--danger-color);
+            border-color: var(--danger-color);
+        }
+    }
+}

@@ -2,7 +2,7 @@
  * @Author: dyb-dev
  * @Date: 2025-02-10 22:36:27
  * @LastEditors: dyb-dev
- * @LastEditTime: 2025-02-20 11:26:46
+ * @LastEditTime: 2025-09-14 02:32:34
  * @FilePath: /react-web-template/vite.config.ts
  * @Description: vite配置文件
  */
@@ -63,7 +63,7 @@ export default defineConfig(({ mode }: ConfigEnv) => {
         : { ..._devEnvConfig, ...setupProdConfig(_setupEnvConfigParam) }
 
     /** CONST: 基础环境配置 */
-    const _baseEnvConfig: UserConfig = {
+    const _baseEnvConfig = {
         // 项目根目录，默认： process.cwd()
         root: projectRootDir,
         // 开发或生产环境服务的公共基础路径，默认：/
@@ -178,7 +178,7 @@ export default defineConfig(({ mode }: ConfigEnv) => {
                     __PROJECT_INFO__
                 })
         ]
-    }
+    } as UserConfig
 
     return mergeConfig(_baseEnvConfig, _currentEnvConfig)
 

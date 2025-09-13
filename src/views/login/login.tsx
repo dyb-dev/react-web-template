@@ -1,8 +1,8 @@
 /*
  * @Author: dyb-dev
  * @Date: 2025-02-16 22:52:14
- * @LastEditors: v_zhgtzhong
- * @LastEditTime: 2025-08-01 10:27:20
+ * @LastEditors: dyb-dev
+ * @LastEditTime: 2025-09-13 14:38:38
  * @FilePath: /react-web-template/src/views/login/login.tsx
  * @Description: 登录页面
  */
@@ -15,7 +15,7 @@ import { useNavigate } from "@/hooks"
 import { useUserInfoStore } from "@/stores"
 import { getCurrentUrlQuery, isDevEnv, isPhoneNumber } from "@/utils"
 
-import "./login.scss"
+import styles from "./login.module.scss"
 
 /** 查询参数 */
 interface ISearchParams {
@@ -33,7 +33,7 @@ interface IFormData {
     password: string
 }
 
-export default memo(function Login() {
+export default memo(function Login () {
 
     // 用于导航
     const { navigate, back } = useNavigate()
@@ -76,7 +76,7 @@ export default memo(function Login() {
     }, [formData])
 
     /** EVENT: 点击登录按钮 */
-    const onClickLoginButton = useCallback(async() => {
+    const onClickLoginButton = useCallback(async () => {
 
         // 校验表单是否通过
         if (!isDevEnv() && !validateForm()) {
@@ -113,8 +113,8 @@ export default memo(function Login() {
     }, [login, navigate, formData, validateForm])
 
     return (
-        <section className="login">
-            <Form className="login__form" layout="horizontal">
+        <section className={styles["login"]}>
+            <Form className={styles["login__form"]} layout="horizontal">
                 <Form.Item label="手机号" name="username">
                     <Input
                         type="tel"
@@ -148,7 +148,7 @@ export default memo(function Login() {
             </Form>
 
             <Button
-                className="login__button"
+                className={styles["login__button"]}
                 shape="rounded"
                 color="primary"
                 size="large"
@@ -160,7 +160,7 @@ export default memo(function Login() {
             </Button>
 
             <Button
-                className="login__button"
+                className={styles["login__button"]}
                 shape="rounded"
                 color="primary"
                 size="large"

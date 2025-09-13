@@ -1,0 +1,26 @@
+/*
+ * @Author: dyb-dev
+ * @Date: 2025-09-11 03:13:31
+ * @LastEditors: dyb-dev
+ * @LastEditTime: 2025-09-13 14:19:33
+ * @FilePath: /react-web-template/src/views/home/two/two.module.scss
+ * @Description: two 子路由样式
+ */
+
+.two {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    border: 1px solid #03e049;
+
+    &__title {
+        margin-top: 100px;
+        margin-bottom: 100px;
+        color: var(--text-color);
+        font-size: 44px;
+        text-align: center;
+    }
+}

@@ -46,7 +46,7 @@ export const usePolling = (
 
         _polling = true
 
-        const _poll = async() => {
+        const _poll = async () => {
 
             try {
 

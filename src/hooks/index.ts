@@ -2,7 +2,7 @@
  * @Author: dyb-dev
  * @Date: 2025-02-12 15:47:41
  * @LastEditors: dyb-dev
- * @LastEditTime: 2025-08-16 13:10:26
+ * @LastEditTime: 2025-09-13 14:11:05
  * @FilePath: /react-web-template/src/hooks/index.ts
  * @Description: hook模块
  */
@@ -13,8 +13,8 @@ export * from "./async"
 export * from "./interaction"
 /** 导出监控相关hooks函数 */
 export * from "./monitor"
-/** 导出导航相关hooks函数 */
-export * from "./navigate"
+/** 导出路由相关hooks函数 */
+export * from "./router"
 /** 导出swr相关hooks函数 */
 export * from "./swr"
 /** 导出时间控制相关hooks函数 */
