@@ -375,7 +375,7 @@
         "unpackage",
         "unplugin",
         "Vant",
-        "vconsole",
+        "eruda",
         "VITE",
         "vitepress",
         "vueuse",
@@ -385,7 +385,8 @@
         "vant",
         "persistedstate",
         "mistjs",
-        "partialize"
+        "partialize",
+        "ahooks"
     ],
 
     // #endregion

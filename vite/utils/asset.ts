@@ -1,8 +1,8 @@
 /*
  * @Author: dyb-dev
  * @Date: 2025-02-21 16:16:46
- * @LastEditors: v_zhgtzhong
- * @LastEditTime: 2025-08-01 00:45:26
+ * @LastEditors: dyb-dev
+ * @LastEditTime: 2025-11-01 12:42:58
  * @FilePath: /react-web-template/vite/utils/asset.ts
  * @Description: Vite 资源处理模块
  */
@@ -254,10 +254,22 @@ export const assetFileNames = (
 
 // CONST: 第三方模块拆分配置（chunk名:模块集合）
 const THIRD_PARTY_MODULE_SPLIT_CONFIG = {
-    "base-vendor": ["react", "react-dom", "react-router-dom"],
+    "base-vendor": [
+        "react",
+        "react-dom",
+        "react-router-dom",
+        "react-transition-group",
+        "zustand",
+        "use-sync-external-store",
+        "immer",
+        "use-immer",
+        "classnames",
+        "swr",
+        "ahooks"
+    ],
     "component-vendor": ["antd-mobile", "antd-mobile-icons"],
-    "utils-vendor": ["axios", "dayjs", "query-string", "zustand", "use-sync-external-store", "immer", "use-immer", "classnames"],
-    "vconsole-vendor": ["vconsole"]
+    "utils-vendor": ["axios", "dayjs", "query-string", "js-cookie", "es-toolkit", "copy-to-clipboard", "file-saver", "zod"],
+    "eruda-vendor": ["eruda"]
 }
 
 /** CONST: 第三方模块拆分配置 `key` 列表 */

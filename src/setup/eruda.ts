@@ -2,9 +2,9 @@
  * @Author: dyb-dev
  * @Date: 2025-07-28 13:29:39
  * @LastEditors: dyb-dev
- * @LastEditTime: 2025-07-28 13:30:12
- * @FilePath: /react-web-template/src/setup/vConsole.ts
- * @Description: 初始化 VConsole 调试器
+ * @LastEditTime: 2025-11-01 10:57:09
+ * @FilePath: /react-web-template/src/setup/eruda.ts
+ * @Description: 初始化 eruda 调试器
  */
 
 import { isEnableDebug } from "@/utils"
@@ -13,12 +13,12 @@ import { isEnableDebug } from "@/utils"
 let _isSetup = false
 
 /**
- * FUN: 初始化 VConsole 调试器
+ * FUN: 初始化 eruda 调试器
  *
  * @author dyb-dev
- * @date 2025-07-21 16:01:36
+ * @date 2025-10-28 22:54:12
  */
-export const setupVConsole = () => {
+export const setupEruda = () => {
 
     /** 已经完成初始化时 */
     if (_isSetup) {
@@ -34,10 +34,11 @@ export const setupVConsole = () => {
 
     }
 
-    import("vconsole")
-        .then(({ default: VConsole }) => {
+    import("eruda")
+        .then(({ default: eruda }) => {
 
-            window.vConsole = new VConsole()
+            eruda.init()
+            window.eruda = eruda
 
             console.log("[项目信息]", __PROJECT_INFO__)
 
@@ -46,7 +47,7 @@ export const setupVConsole = () => {
         })
         .catch(error => {
 
-            console.error("VConsole 加载失败", error)
+            console.error("eruda 加载失败", error)
 
         })
 
