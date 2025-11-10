@@ -10,7 +10,7 @@
 import { Button } from "antd-mobile/2x"
 import { memo } from "react"
 
-import { usePopup } from "@/components"
+import { usePopupContext } from "@/components"
 
 import type { IShowDemoPopupResult } from ".."
 
@@ -27,7 +27,7 @@ export const Children = memo(function Children (props: IChildrenProps) {
     const { title } = props
 
     /** HOOKS: 使用弹窗上下文 */
-    const { loadStatus, close, result } = usePopup<IShowDemoPopupResult>()
+    const { loadStatus, close, result } = usePopupContext<IShowDemoPopupResult>()
 
     return (
         <div className="demo-popup__children">

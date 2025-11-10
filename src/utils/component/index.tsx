@@ -2,7 +2,7 @@
  * @Author: dyb-dev
  * @Date: 2025-09-12 19:39:14
  * @LastEditors: dyb-dev
- * @LastEditTime: 2025-09-13 14:21:32
+ * @LastEditTime: 2025-11-11 00:34:16
  * @FilePath: /react-web-template/src/utils/component/index.tsx
  * @Description: 组件相关工具函数
  */
@@ -11,6 +11,7 @@ import { useEffect } from "react"
 import { createRoot } from "react-dom/client"
 import { useImmer } from "use-immer"
 
+import type { TLoadStatus } from "@/hooks"
 import type { ComponentType, ReactNode } from "react"
 
 /**
@@ -38,6 +39,20 @@ export interface IDefaultProps<Result extends IBaseResult = IDefaultResult> {
     onClose?: (result: Result) => void | Promise<void>
     /** 监听关闭完成 */
     onClosed?: (result: Result) => void | Promise<void>
+}
+
+/** 默认上下文 */
+export interface IDefaultContext<Result extends IBaseResult = IDefaultResult> {
+    /** 加载状态 */
+    loadStatus: TLoadStatus
+    /** 结果对象 */
+    result: Result
+    /**
+     * 执行关闭操作
+     *
+     * @param {Result} [result] 结果对象 默认: { actionType: "close" }
+     */
+    close: (result?: Result) => void
 }
 
 /**

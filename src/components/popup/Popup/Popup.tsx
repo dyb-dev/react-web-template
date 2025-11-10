@@ -2,7 +2,7 @@
  * @Author: dyb-dev
  * @Date: 2025-09-13 14:24:03
  * @LastEditors: dyb-dev
- * @LastEditTime: 2025-09-13 17:28:43
+ * @LastEditTime: 2025-11-11 00:33:33
  * @FilePath: /react-web-template/src/components/popup/Popup/Popup.tsx
  * @Description: 弹出层
  */
@@ -13,10 +13,9 @@ import { useImmer } from "use-immer"
 
 import { useAsyncTask } from "@/hooks"
 
-import { Provider } from "./context"
+import { PopupProvider } from "./context"
 
-import type { IContext } from "./context"
-import type { IBaseResult, IDefaultProps, IDefaultResult } from "@/utils"
+import type { IBaseResult, IDefaultContext, IDefaultProps, IDefaultResult } from "@/utils"
 import type { PopupProps } from "antd-mobile/2x"
 
 /** 弹出层 Props */
@@ -68,7 +67,7 @@ export const Popup = memo(function Popup (props: IPopupProps) {
     )
 
     /** MEMO: 传递给子孙组件的上下文值 */
-    const contextValue = useMemo<IContext<IDefaultResult>>(
+    const context = useMemo<IDefaultContext<IDefaultResult>>(
         () => ({
             loadStatus,
             result,
@@ -78,7 +77,7 @@ export const Popup = memo(function Popup (props: IPopupProps) {
     )
 
     return (
-        <Provider value={contextValue}>
+        <PopupProvider value={context}>
             <AntdPopup
                 {...popupProps}
                 closeOnMaskClick={closeOnMaskClick}
@@ -89,7 +88,7 @@ export const Popup = memo(function Popup (props: IPopupProps) {
 
                 }}
             />
-        </Provider>
+        </PopupProvider>
     )
 
 })
