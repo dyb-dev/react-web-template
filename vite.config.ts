@@ -1,10 +1,10 @@
 /*
  * @Author: dyb-dev
  * @Date: 2025-02-10 22:36:27
- * @LastEditors: dyb-dev
- * @LastEditTime: 2025-09-14 02:32:34
+ * @LastEditors: Please set LastEditors
+ * @LastEditTime: 2025-11-15 13:00:58
  * @FilePath: /react-web-template/vite.config.ts
- * @Description: vite配置文件
+ * @Description: vite 配置
  */
 
 import { resolve } from "path"
