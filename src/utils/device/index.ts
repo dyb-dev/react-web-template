@@ -1,10 +1,5 @@
 /*
- * @Author: dyb-dev
- * @Date: 2025-02-11 23:45:05
- * @LastEditors: v_zhgtzhong
- * @LastEditTime: 2025-08-01 00:42:49
- * @FilePath: /react-web-template/src/utils/device/index.ts
- * @Description: 设备相关工具函数
+ * @FileDesc: 设备相关工具函数
  */
 
 /**

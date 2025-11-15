@@ -1,10 +1,5 @@
 /*
- * @Author: dyb-dev
- * @Date: 2025-02-19 12:55:16
- * @LastEditors: dyb-dev
- * @LastEditTime: 2025-09-13 19:06:50
- * @FilePath: /react-web-template/src/components/index.ts
- * @Description: 组件模块
+ * @FileDesc: 组件模块
  */
 
 /** 导出立方体组件 */

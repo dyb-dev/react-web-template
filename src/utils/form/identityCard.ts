@@ -1,10 +1,5 @@
 /*
- * @Author: dyb-dev
- * @Date: 2025-02-11 23:45:05
- * @LastEditors: v_zhgtzhong
- * @LastEditTime: 2025-08-01 00:43:02
- * @FilePath: /react-web-template/src/utils/form/identityCard.ts
- * @Description: 身份证相关工具函数
+ * @FileDesc: 身份证相关工具函数
  */
 
 /**

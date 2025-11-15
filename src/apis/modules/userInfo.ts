@@ -1,10 +1,5 @@
 /*
- * @Author: dyb-dev
- * @Date: 2025-02-11 23:47:17
- * @LastEditors: v_zhgtzhong
- * @LastEditTime: 2025-08-01 00:40:21
- * @FilePath: /react-web-template/src/apis/modules/userInfo.ts
- * @Description: 用户信息相关接口
+ * @FileDesc: 用户信息相关接口
  */
 
 import { sendRequest } from "../request"

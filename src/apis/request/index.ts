@@ -1,10 +1,5 @@
 /*
- * @Author: dyb-dev
- * @Date: 2025-02-21 19:21:29
- * @LastEditors: v_zhgtzhong
- * @LastEditTime: 2025-08-01 00:40:35
- * @FilePath: /react-web-template/src/apis/request/index.ts
- * @Description: 封装请求模块
+ * @FileDesc: 封装请求模块
  */
 
 import axios from "axios"

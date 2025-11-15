@@ -1,10 +1,5 @@
 /*
- * @Author: dyb-dev
- * @Date: 2025-02-11 23:45:05
- * @LastEditors: v_zhgtzhong
- * @LastEditTime: 2025-08-01 01:01:51
- * @FilePath: /react-web-template/src/utils/url/index.ts
- * @Description: url相关工具函数
+ * @FileDesc: url相关工具函数
  */
 
 import queryString from "query-string"

@@ -1,10 +1,5 @@
 /*
- * @Author: dyb-dev
- * @Date: 2025-09-13 14:24:03
- * @LastEditors: dyb-dev
- * @LastEditTime: 2025-11-11 00:33:33
- * @FilePath: /react-web-template/src/components/popup/Popup/Popup.tsx
- * @Description: 弹出层
+ * @FileDesc: 弹出层
  */
 
 import { Popup as AntdPopup } from "antd-mobile/2x"

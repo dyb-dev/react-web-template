@@ -1,10 +1,5 @@
 /*
- * @Author: dyb-dev
- * @Date: 2025-09-09 01:10:27
- * @LastEditors: dyb-dev
- * @LastEditTime: 2025-09-13 17:59:24
- * @FilePath: /react-web-template/src/hooks/interaction/useDragDrop.ts
- * @Description: 使用拖拽放置
+ * @FileDesc: 使用拖拽放置
  */
 
 import { useCallback } from "react"

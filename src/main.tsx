@@ -1,10 +1,5 @@
 /*
- * @Author: dyb-dev
- * @Date: 2025-02-10 22:36:27
- * @LastEditors: dyb-dev
- * @LastEditTime: 2025-07-26 13:29:23
- * @FilePath: /react-web-template/src/main.tsx
- * @Description: 程序入口文件
+ * @FileDesc: 程序入口文件
  */
 
 import { createRoot } from "react-dom/client"

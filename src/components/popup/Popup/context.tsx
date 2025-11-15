@@ -1,10 +1,5 @@
 /*
- * @Author: dyb-dev
- * @Date: 2025-09-13 14:24:03
- * @LastEditors: dyb-dev
- * @LastEditTime: 2025-11-11 00:35:34
- * @FilePath: /react-web-template/src/components/popup/Popup/context.tsx
- * @Description: 弹出层上下文
+ * @FileDesc: 弹出层上下文
  */
 
 import { createContext, useContext } from "react"

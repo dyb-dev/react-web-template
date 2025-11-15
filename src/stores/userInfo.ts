@@ -1,10 +1,5 @@
 /*
- * @Author: dyb-dev
- * @Date: 2025-02-12 21:43:16
- * @LastEditors: v_zhgtzhong
- * @LastEditTime: 2025-08-01 00:41:57
- * @FilePath: /react-web-template/src/stores/userInfo.ts
- * @Description: 用户信息状态管理
+ * @FileDesc: 用户信息状态管理
  */
 
 // import { createJSONStorage, persist, subscribeWithSelector } from "zustand/middleware"

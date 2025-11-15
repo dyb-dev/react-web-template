@@ -1,10 +1,5 @@
 /*
- * @Author: dyb-dev
- * @Date: 2025-07-28 13:29:39
- * @LastEditors: dyb-dev
- * @LastEditTime: 2025-11-01 10:56:54
- * @FilePath: /react-web-template/src/setup/index.ts
- * @Description: 初始化模块
+ * @FileDesc: 初始化模块
  */
 
 /** 导出初始化接口配置 */

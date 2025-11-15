@@ -1,10 +1,5 @@
 /*
- * @Author: dyb-dev
- * @Date: 2025-02-22 14:05:37
- * @LastEditors: v_zhgtzhong
- * @LastEditTime: 2025-08-01 10:27:03
- * @FilePath: /react-web-template/src/components/Cube/Cube.tsx
- * @Description: 立方体组件
+ * @FileDesc: 立方体组件
  */
 
 import classNames from "classnames"

@@ -1,10 +1,5 @@
 /*
- * @Author: dyb-dev
- * @Date: 2025-09-11 03:17:20
- * @LastEditors: dyb-dev
- * @LastEditTime: 2025-09-13 14:37:01
- * @FilePath: /react-web-template/src/views/home/two/two.tsx
- * @Description: two 子路由
+ * @FileDesc: two 子路由
  */
 
 import { Button } from "antd-mobile/2x"

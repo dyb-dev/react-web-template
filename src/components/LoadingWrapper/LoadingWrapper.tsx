@@ -1,10 +1,5 @@
 /*
- * @Author: dyb-dev
- * @Date: 2025-09-13 00:51:00
- * @LastEditors: dyb-dev
- * @LastEditTime: 2025-09-13 19:11:38
- * @FilePath: /react-web-template/src/components/LoadingWrapper/LoadingWrapper.tsx
- * @Description: 加载中包装组件
+ * @FileDesc: 加载中包装组件
  */
 
 import { SpinLoading } from "antd-mobile/2x"

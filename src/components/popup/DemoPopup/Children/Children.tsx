@@ -1,10 +1,5 @@
 /*
- * @Author: dyb-dev
- * @Date: 2025-09-12 22:01:33
- * @LastEditors: dyb-dev
- * @LastEditTime: 2025-09-13 14:25:23
- * @FilePath: /react-web-template/src/components/popup/DemoPopup/Children/Children.tsx
- * @Description: 子组件
+ * @FileDesc: 子组件
  */
 
 import { Button } from "antd-mobile/2x"

@@ -1,10 +1,5 @@
 /*
- * @Author: dyb-dev
- * @Date: 2025-02-11 23:20:17
- * @LastEditors: dyb-dev
- * @LastEditTime: 2025-02-22 15:16:30
- * @FilePath: /react-web-template/src/sw/sw.ts
- * @Description: 控制 Service Worker 脚本文件
+ * @FileDesc: 控制 Service Worker 脚本文件
  */
 
 import { CacheableResponsePlugin } from "workbox-cacheable-response"

@@ -1,10 +1,5 @@
 /*
- * @Author: dyb-dev
- * @Date: 2025-02-22 15:10:22
- * @LastEditors: v_zhgtzhong
- * @LastEditTime: 2025-08-01 00:41:47
- * @FilePath: /react-web-template/src/stores/activity.ts
- * @Description: 当前活动状态管理
+ * @FileDesc: 当前活动状态管理
  */
 
 // import { createJSONStorage, persist, subscribeWithSelector } from "zustand/middleware"

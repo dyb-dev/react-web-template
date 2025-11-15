@@ -1,10 +1,5 @@
 /*
- * @Author: dyb-dev
- * @Date: 2025-02-20 17:04:04
- * @LastEditors: dyb-dev
- * @LastEditTime: 2025-09-13 14:42:06
- * @FilePath: /react-web-template/src/views/not-found/not-found.tsx
- * @Description: 404页面
+ * @FileDesc: 404页面
  */
 
 import { ResultPage } from "antd-mobile/2x"

@@ -1,10 +1,5 @@
 /*
- * @Author: dyb-dev
- * @Date: 2025-09-13 14:24:03
- * @LastEditors: dyb-dev
- * @LastEditTime: 2025-09-13 14:25:42
- * @FilePath: /react-web-template/src/components/popup/Popup/index.ts
- * @Description: 弹出层
+ * @FileDesc: 弹出层
  */
 
 /** 导出 `弹出层` */

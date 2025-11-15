@@ -1,10 +1,5 @@
 /*
- * @Author: dyb-dev
- * @Date: 2025-07-28 13:29:39
- * @LastEditors: dyb-dev
- * @LastEditTime: 2025-07-29 01:22:10
- * @FilePath: /react-web-template/src/setup/theme.ts
- * @Description: 初始化主题
+ * @FileDesc: 初始化主题
  */
 
 import { ETheme, useThemeStore } from "@/stores"

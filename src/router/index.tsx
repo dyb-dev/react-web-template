@@ -1,10 +1,5 @@
 /*
- * @Author: dyb-dev
- * @Date: 2025-09-13 00:42:46
- * @LastEditors: dyb-dev
- * @LastEditTime: 2025-09-13 14:16:51
- * @FilePath: /react-web-template/src/router/index.tsx
- * @Description: 路由模块
+ * @FileDesc: 路由模块
  */
 
 import { lazy, Suspense } from "react"

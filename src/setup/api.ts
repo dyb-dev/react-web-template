@@ -1,10 +1,5 @@
 /*
- * @Author: dyb-dev
- * @Date: 2025-07-28 13:29:39
- * @LastEditors: dyb-dev
- * @LastEditTime: 2025-07-28 13:35:53
- * @FilePath: /react-web-template/src/setup/api.ts
- * @Description: 初始化接口配置
+ * @FileDesc: 初始化接口配置
  */
 
 import axios from "axios"

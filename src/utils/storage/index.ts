@@ -1,10 +1,5 @@
 /*
- * @Author: dyb-dev
- * @Date: 2025-02-11 23:45:05
- * @LastEditors: v_zhgtzhong
- * @LastEditTime: 2025-08-01 00:43:44
- * @FilePath: /react-web-template/src/utils/storage/index.ts
- * @Description: 缓存相关工具函数
+ * @FileDesc: 缓存相关工具函数
  */
 
 /** 可以序列化的对象 */

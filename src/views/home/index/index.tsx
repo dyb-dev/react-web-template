@@ -1,10 +1,5 @@
 /*
- * @Author: dyb-dev
- * @Date: 2025-09-11 03:17:16
- * @LastEditors: dyb-dev
- * @LastEditTime: 2025-09-13 14:37:19
- * @FilePath: /react-web-template/src/views/home/index/index.tsx
- * @Description: index 子路由
+ * @FileDesc: index 子路由
  */
 
 import { Button } from "antd-mobile/2x"

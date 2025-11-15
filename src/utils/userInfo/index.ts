@@ -1,10 +1,5 @@
 /*
- * @Author: dyb-dev
- * @Date: 2025-02-11 23:45:05
- * @LastEditors: v_zhgtzhong
- * @LastEditTime: 2025-08-01 00:44:37
- * @FilePath: /react-web-template/src/utils/userInfo/index.ts
- * @Description: 用户信息相关工具函数
+ * @FileDesc: 用户信息相关工具函数
  */
 
 import { CERTIFICATE_CONFIG_LIST, GENDER_CONFIG_LIST } from "@/constants"

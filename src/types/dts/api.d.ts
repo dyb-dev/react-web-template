@@ -1,10 +1,5 @@
 /*
- * @Author: dyb-dev
- * @Date: 2025-02-11 23:19:25
- * @LastEditors: dyb-dev
- * @LastEditTime: 2025-02-21 14:30:15
- * @FilePath: /react-web-template/src/types/dts/api.d.ts
- * @Description: api 类型声明补充文件
+ * @FileDesc: api 类型声明补充文件
  */
 
 import type { AxiosResponse } from "axios"

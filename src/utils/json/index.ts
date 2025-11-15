@@ -1,10 +1,5 @@
 /*
- * @Author: dyb-dev
- * @Date: 2025-09-13 01:19:36
- * @LastEditors: dyb-dev
- * @LastEditTime: 2025-09-13 18:03:09
- * @FilePath: /react-web-template/src/utils/json/index.ts
- * @Description: json 相关工具函数
+ * @FileDesc: json 相关工具函数
  */
 
 import { saveAs } from "file-saver"

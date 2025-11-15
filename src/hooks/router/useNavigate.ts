@@ -1,10 +1,5 @@
 /*
- * @Author: dyb-dev
- * @Date: 2025-09-11 03:53:38
- * @LastEditors: dyb-dev
- * @LastEditTime: 2025-09-13 14:10:33
- * @FilePath: /react-web-template/src/hooks/router/useNavigate.ts
- * @Description: 使用导航
+ * @FileDesc: 使用导航
  */
 
 import { useNavigate as useRouterNavigate } from "react-router-dom"

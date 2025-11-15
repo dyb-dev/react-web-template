@@ -1,10 +1,5 @@
 /*
- * @Author: dyb-dev
- * @Date: 2025-09-13 00:44:01
- * @LastEditors: dyb-dev
- * @LastEditTime: 2025-09-13 14:36:32
- * @FilePath: /react-web-template/src/views/home/home.tsx
- * @Description: 首页
+ * @FileDesc: 首页
  */
 
 import { Button } from "antd-mobile/2x"

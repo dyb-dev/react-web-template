@@ -1,10 +1,5 @@
 /*
- * @Author: dyb-dev
- * @Date: 2025-09-13 00:50:45
- * @LastEditors: dyb-dev
- * @LastEditTime: 2025-09-13 17:57:26
- * @FilePath: /react-web-template/src/components/EmptyWrapper/EmptyWrapper.tsx
- * @Description: 空状态包装组件
+ * @FileDesc: 空状态包装组件
  */
 
 import { ErrorBlock } from "antd-mobile/2x"

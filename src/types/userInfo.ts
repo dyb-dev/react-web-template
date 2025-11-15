@@ -1,10 +1,5 @@
 /*
- * @Author: dyb-dev
- * @Date: 2025-02-11 23:19:25
- * @LastEditors: v_zhgtzhong
- * @LastEditTime: 2025-08-01 00:42:16
- * @FilePath: /react-web-template/src/types/userInfo.ts
- * @Description: 用户信息类型模块
+ * @FileDesc: 用户信息类型模块
  */
 
 /** 性别类型枚举 */

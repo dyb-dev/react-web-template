@@ -1,10 +1,5 @@
 /*
- * @Author: dyb-dev
- * @Date: 2025-04-28 00:08:52
- * @LastEditors: v_zhgtzhong
- * @LastEditTime: 2025-08-01 00:41:23
- * @FilePath: /react-web-template/src/hooks/swr/activity.ts
- * @Description: 本次活动swr相关hooks函数
+ * @FileDesc: 本次活动swr相关hooks函数
  */
 
 import useSWR from "swr"

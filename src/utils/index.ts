@@ -1,10 +1,5 @@
 /*
- * @Author: dyb-dev
- * @Date: 2025-02-11 23:45:05
- * @LastEditors: dyb-dev
- * @LastEditTime: 2025-09-13 19:06:40
- * @FilePath: /react-web-template/src/utils/index.ts
- * @Description: 工具函数模块
+ * @FileDesc: 工具函数模块
  */
 
 /** 导出计算相关工具函数 */

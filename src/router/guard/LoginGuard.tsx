@@ -1,10 +1,5 @@
 /*
- * @Author: dyb-dev
- * @Date: 2025-09-13 00:42:53
- * @LastEditors: dyb-dev
- * @LastEditTime: 2025-09-13 14:13:15
- * @FilePath: /react-web-template/src/router/guard/LoginGuard.tsx
- * @Description: 登录守卫组件
+ * @FileDesc: 登录守卫组件
  */
 
 import { memo, useEffect } from "react"

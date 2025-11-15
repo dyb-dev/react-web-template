@@ -1,10 +1,5 @@
 /*
- * @Author: dyb-dev
- * @Date: 2025-02-21 19:26:24
- * @LastEditors: v_zhgtzhong
- * @LastEditTime: 2025-08-01 00:40:48
- * @FilePath: /react-web-template/src/apis/request/log.ts
- * @Description: 请求日志模块
+ * @FileDesc: 请求日志模块
  */
 
 import { isAbsoluteUrl, isDevEnv, isEnableDebug, trimUrlSlashes } from "@/utils"

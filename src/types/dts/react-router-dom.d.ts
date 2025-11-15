@@ -1,10 +1,5 @@
 /*
- * @Author: dyb-dev
- * @Date: 2025-09-11 03:19:08
- * @LastEditors: dyb-dev
- * @LastEditTime: 2025-09-13 14:14:42
- * @FilePath: /react-web-template/src/types/dts/react-router-dom.d.ts
- * @Description: react-router-dom 类型声明补充文件
+ * @FileDesc: react-router-dom 类型声明补充文件
  */
 
 import type { UIMatch, IndexRouteObject, NonIndexRouteObject } from "react-router-dom"

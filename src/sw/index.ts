@@ -1,10 +1,5 @@
 /*
- * @Author: dyb-dev
- * @Date: 2025-02-11 23:20:17
- * @LastEditors: v_zhgtzhong
- * @LastEditTime: 2025-08-01 00:42:03
- * @FilePath: /react-web-template/src/sw/index.ts
- * @Description: Service Worker 模块
+ * @FileDesc: Service Worker 模块
  */
 
 /**

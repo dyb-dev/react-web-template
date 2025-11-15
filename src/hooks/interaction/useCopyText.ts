@@ -1,10 +1,5 @@
 /*
- * @Author: dyb-dev
- * @Date: 2025-09-09 00:47:24
- * @LastEditors: dyb-dev
- * @LastEditTime: 2025-09-13 17:59:17
- * @FilePath: /react-web-template/src/hooks/interaction/useCopyText.ts
- * @Description: 使用复制文本
+ * @FileDesc: 使用复制文本
  */
 
 import { Toast } from "antd-mobile/2x"

@@ -1,10 +1,5 @@
 /*
- * @Author: dyb-dev
- * @Date: 2025-02-10 22:36:27
- * @LastEditors: dyb-dev
- * @LastEditTime: 2025-11-01 10:58:38
- * @FilePath: /react-web-template/src/App.tsx
- * @Description: App根组件
+ * @FileDesc: App根组件
  */
 
 import { ConfigProvider } from "antd-mobile/2x"

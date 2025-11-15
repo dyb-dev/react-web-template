@@ -1,10 +1,5 @@
 /*
- * @Author: dyb-dev
- * @Date: 2025-02-21 16:11:23
- * @LastEditors: v_zhgtzhong
- * @LastEditTime: 2025-08-01 00:46:02
- * @FilePath: /react-web-template/vite/utils/plugin.ts
- * @Description: Vite 插件模块
+ * @FileDesc: Vite 插件模块
  */
 
 import { existsSync, renameSync } from "fs"

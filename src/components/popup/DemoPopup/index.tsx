@@ -1,10 +1,5 @@
 /*
- * @Author: dyb-dev
- * @Date: 2025-09-13 14:24:03
- * @LastEditors: dyb-dev
- * @LastEditTime: 2025-09-13 18:24:13
- * @FilePath: /react-web-template/src/components/popup/DemoPopup/index.tsx
- * @Description: Demo 弹出层
+ * @FileDesc: Demo 弹出层
  */
 
 import { showPopup } from "@/components"

@@ -1,10 +1,5 @@
 /*
- * @Author: dyb-dev
- * @Date: 2025-09-11 04:00:14
- * @LastEditors: dyb-dev
- * @LastEditTime: 2025-09-13 14:10:43
- * @FilePath: /react-web-template/src/hooks/router/useRoute.ts
- * @Description: 使用路由
+ * @FileDesc: 使用路由
  */
 
 import { useMatches } from "react-router-dom"

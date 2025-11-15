@@ -1,10 +1,5 @@
 /*
- * @Author: dyb-dev
- * @Date: 2025-02-16 22:52:14
- * @LastEditors: dyb-dev
- * @LastEditTime: 2025-09-13 14:38:38
- * @FilePath: /react-web-template/src/views/login/login.tsx
- * @Description: 登录页面
+ * @FileDesc: 登录页面
  */
 
 import { Button, Form, Input } from "antd-mobile/2x"

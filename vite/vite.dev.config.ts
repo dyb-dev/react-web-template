@@ -1,10 +1,5 @@
 /*
- * @Author: dyb-dev
- * @Date: 2025-02-11 22:35:30
- * @LastEditors: v_zhgtzhong
- * @LastEditTime: 2025-08-01 00:44:52
- * @FilePath: /react-web-template/vite/vite.dev.config.ts
- * @Description: vite开发环境配置
+ * @FileDesc: vite开发环境配置
  */
 
 import { isIgnoreWatchFile } from "./utils"

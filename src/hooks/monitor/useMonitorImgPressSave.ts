@@ -1,10 +1,5 @@
 /*
- * @Author: dyb-dev
- * @Date: 2025-11-08 12:55:00
- * @LastEditors: dyb-dev
- * @LastEditTime: 2025-11-08 12:55:11
- * @FilePath: /react-web-template/src/hooks/monitor/useMonitorImgPressSave.ts
- * @Description: 使用监视用户图片长按保存
+ * @FileDesc: 使用监视用户图片长按保存
  */
 
 import { isIos } from "@/utils"
