@@ -8,6 +8,7 @@ import VueReactSwc from "@vitejs/plugin-react-swc"
 import PostcssAutoprefixer from "autoprefixer"
 import { getPort } from "portfinder-sync"
 import PostcssMobileForever from "postcss-mobile-forever"
+import UnoCSS from "unocss/vite"
 import { defineConfig, loadEnv, mergeConfig } from "vite"
 import { createHtmlPlugin as ViteHtml } from "vite-plugin-html"
 import ViteMkcert from "vite-plugin-mkcert"
@@ -146,6 +147,8 @@ export default defineConfig(({ mode }: ConfigEnv) => {
         plugins: [
             // 处理和编译 .tsx 文件
             VueReactSwc(),
+            // 处理原子 css 提取
+            UnoCSS(),
             // 替换html文件占位符
             ViteHtml({
                 // 是否压缩html文件

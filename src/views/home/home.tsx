@@ -30,7 +30,7 @@ export default memo(function Home () {
             <div className={styles["home__logo-box"]}>
                 <a href="https://zh-hans.react.dev/" target="_blank" rel="noreferrer">
                     <img
-                        className={`${styles["home__logo-box__item"]} ${styles["home__logo-box__item-react"]}`}
+                        className={`${styles["home__logo-box__item"]}  ${styles["home__logo-box__item-react"]}`}
                         src={react}
                         alt=""
                     />
@@ -38,7 +38,7 @@ export default memo(function Home () {
 
                 <a href="https://cn.vitejs.dev/" target="_blank" rel="noreferrer">
                     <img
-                        className={`${styles["home__logo-box__item"]} ${styles["home__logo-box__item-vite"]}`}
+                        className={`${styles["home__logo-box__item"]}  ${styles["home__logo-box__item-vite"]}`}
                         src={vite}
                         alt=""
                     />

@@ -378,7 +378,8 @@
         "persistedstate",
         "mistjs",
         "partialize",
-        "ahooks"
+        "ahooks",
+        "unocss"
     ],
 
     // #endregion

@@ -9,6 +9,7 @@ import App from "@/App.tsx"
 
 import type { Container } from "react-dom/client"
 
+import "virtual:uno.css"
 import "./styles/index.scss"
 
 /** TODO: 如果需要使用 PWA 则解开此段代码 */
