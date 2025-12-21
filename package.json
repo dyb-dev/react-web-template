@@ -1,6 +1,6 @@
 {
     "name": "react-web-template",
-    "version": "1.4.3",
+    "version": "1.4.4",
     "description": "基于`react全家桶`搭建的Web移动端模板",
     "author": "dyb-dev",
     "license": "MIT",
@@ -30,7 +30,7 @@
         "directory": "https://github.com/dyb-dev/react-web-template"
     },
     "devDependencies": {
-        "@dyb-dev/eslint-config": "^1.0.0",
+        "@dyb-dev/eslint-config": "^1.1.1",
         "@dyb-dev/prettier-config": "^0.0.5",
         "@dyb-dev/project-cli": "^0.0.10",
         "@dyb-dev/stylelint-config": "^0.0.8",
@@ -38,6 +38,7 @@
         "@types/file-saver": "^2.0.7",
         "@types/react": "^18.3.23",
         "@types/react-dom": "^18.3.7",
+        "@unocss/eslint-config": "^66.5.10",
         "@vitejs/plugin-legacy": "^5.4.2",
         "@vitejs/plugin-react-swc": "^3.8.0",
         "autoprefixer": "^10.4.20",
