@@ -27,6 +27,7 @@ unpackage
 *.less
 *.scss
 *.html
+*.md
 
 # 不忽略的项目文件
 !.vscode
