@@ -10,7 +10,7 @@ import { toAssetsAbsoluteUrl } from "@/utils"
 
 import "./Cube.scss"
 
-export const Cube = memo(function Cube() {
+export const Cube = memo(function Cube () {
 
     /** REF: 大立方体数据列表 */
     const largeCubeFaces = [

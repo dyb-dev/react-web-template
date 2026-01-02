@@ -71,7 +71,7 @@ export const useGetId = (params: IGetIdApiParams) => {
         AxiosResponse<IGetIdApiResultData>,
         AxiosResponse<IGetIdApiResultData>,
         [typeof GET_ID_API_URL, IGetIdApiParams]
-    >([GET_ID_API_URL, params], async([GET_ID_API_URL, params]) => {
+    >([GET_ID_API_URL, params], async ([GET_ID_API_URL, params]) => {
 
         const _result = await getIdApi(
             params,

@@ -86,7 +86,7 @@ export const useUserInfoStore = createWithEqualityFn<IUserInfoStoreState & IUser
 
             },
 
-            checkLogin: async() => {
+            checkLogin: async () => {
 
                 /** 当前状态 */
                 const { isLogin } = get()
@@ -116,7 +116,7 @@ export const useUserInfoStore = createWithEqualityFn<IUserInfoStoreState & IUser
 
             },
 
-            logout: async() => {
+            logout: async () => {
 
                 const _logoutApiResult = await logoutApi({
                     testResult: {

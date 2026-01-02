@@ -32,7 +32,7 @@ export const GET_USER_INFO_API_URL = "/1"
  * @param {typeof GET_USER_INFO_API_URL} [url] 路径
  * @returns {*}  {Promise<AxiosResponse<IGetUserInfoApiResultData>>} 结果数据
  */
-export const getUserInfoApi = async(
+export const getUserInfoApi = async (
     testRequestConfig?: TModifyProperties<ITestRequestConfig<IGetUserInfoApiResultData>, "test">,
     url: typeof GET_USER_INFO_API_URL = GET_USER_INFO_API_URL
 ): Promise<AxiosResponse<IGetUserInfoApiResultData>> => {
@@ -70,7 +70,7 @@ export const GET_ID_API_URL = ""
  * @param {typeof GET_ID_API_URL} [url] 路径
  * @returns {*}  {Promise<AxiosResponse<IGetIdApiResultData>>} 结果数据
  */
-export const getIdApi = async(
+export const getIdApi = async (
     params: IGetIdApiParams,
     testRequestConfig?: TModifyProperties<ITestRequestConfig<IGetIdApiResultData>, "test">,
     url: typeof GET_ID_API_URL = GET_ID_API_URL

@@ -22,7 +22,7 @@ export interface ILoginGuardProps {
     children: ReactElement
 }
 
-export const LoginGuard = memo(function LoginGuard({ children }: ILoginGuardProps) {
+export const LoginGuard = memo(function LoginGuard ({ children }: ILoginGuardProps) {
 
     /** HOOKS: 使用路由 */
     const currentRoute = useRoute()
