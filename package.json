@@ -1,6 +1,6 @@
 {
     "name": "react-web-template",
-    "version": "1.5.0",
+    "version": "1.5.1",
     "description": "基于`react全家桶`搭建的Web移动端模板",
     "author": "dyb-dev",
     "license": "MIT",
@@ -15,7 +15,7 @@
         "preview": "vite preview",
         "ts-check": "tsc --build --force",
         "release": "project-cli release",
-        "format": "prettier --write . && eslint --fix . && stylelint --fix ."
+        "format": "prettier --write . && eslint --fix . && stylelint --fix . --allow-empty-input"
     },
     "engines": {
         "node": ">=22.0.0",
@@ -101,7 +101,7 @@
         "*": [
             "prettier --write",
             "eslint --fix",
-            "stylelint --fix"
+            "stylelint --fix --allow-empty-input"
         ]
     }
 }
