@@ -2,9 +2,9 @@
  * @FileDesc: vite 配置
  */
 
-import { resolve } from "path"
+import { resolve } from "node:path"
 
-import VueReactSwc from "@vitejs/plugin-react-swc"
+import ViteReact from "@vitejs/plugin-react"
 import PostcssAutoprefixer from "autoprefixer"
 import { getPort } from "portfinder-sync"
 import PostcssMobileForever from "postcss-mobile-forever"
@@ -146,7 +146,12 @@ export default defineConfig(({ mode }: ConfigEnv) => {
 
         plugins: [
             // 处理和编译 .tsx 文件
-            VueReactSwc(),
+            ViteReact({
+                babel: {
+                    // 启用 react 编译器
+                    plugins: [["babel-plugin-react-compiler", { target: "18" }]]
+                }
+            }),
             // 处理原子 css 提取
             UnoCSS(),
             // 替换html文件占位符

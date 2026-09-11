@@ -10,8 +10,9 @@ import { shallow } from "zustand/vanilla/shallow"
 
 import { checkLoginApi, loginApi, logoutApi } from "@/apis"
 
+import { EApiResultCode } from "@/types"
+
 import type { ILoginApiParams, ILoginApiResultData } from "@/apis"
-import type { AxiosResponse } from "axios"
 
 /** Store 状态 */
 export interface IUserInfoStoreState {
@@ -28,11 +29,11 @@ export interface IUserInfoStoreState {
 /** Store 动作 */
 export interface IUserInfoStoreAction {
     /** 登录 */
-    login: (params: ILoginApiParams) => Promise<AxiosResponse<ILoginApiResultData>>
+    login: (params: ILoginApiParams) => Promise<IApiResult<ILoginApiResultData>>
     /** 检查登录 */
     checkLogin: () => Promise<boolean>
     /** 登出 */
-    logout: () => Promise<AxiosResponse>
+    logout: () => Promise<IApiResult>
 }
 
 /** Store 实例 */
@@ -59,6 +60,7 @@ export const useUserInfoStore = createWithEqualityFn<IUserInfoStoreState & IUser
                 const _loginApiResult = await loginApi(params, {
                     testResult: {
                         success: true,
+                        code: EApiResultCode.Success,
                         message: "登录成功",
                         data: {
                             nickName: "是对的",
@@ -101,6 +103,7 @@ export const useUserInfoStore = createWithEqualityFn<IUserInfoStoreState & IUser
                 const _checkLoginApiResult = await checkLoginApi({
                     testResult: {
                         success: false,
+                        code: EApiResultCode.Success,
                         message: "检查登录成功"
                     }
                 })
@@ -121,6 +124,7 @@ export const useUserInfoStore = createWithEqualityFn<IUserInfoStoreState & IUser
                 const _logoutApiResult = await logoutApi({
                     testResult: {
                         success: true,
+                        code: EApiResultCode.Success,
                         message: "退出成功"
                     }
                 })

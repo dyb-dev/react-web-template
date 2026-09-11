@@ -6,8 +6,9 @@ import useSWR from "swr"
 
 import { GET_ID_API_URL, GET_USER_INFO_API_URL, getIdApi, getUserInfoApi } from "@/apis"
 
+import { EApiResultCode } from "@/types"
+
 import type { IGetIdApiParams, IGetIdApiResultData, IGetUserInfoApiResultData } from "@/apis"
-import type { AxiosResponse } from "axios"
 
 /**
  * HOOKS: 使用获取用户信息
@@ -19,8 +20,8 @@ import type { AxiosResponse } from "axios"
 export const useGetUserInfo = () => {
 
     const { data: result, ...other } = useSWR<
-        AxiosResponse<IGetUserInfoApiResultData>,
-        AxiosResponse<IGetUserInfoApiResultData>,
+        IApiResult<IGetUserInfoApiResultData>,
+        IApiResult<IGetUserInfoApiResultData>,
         typeof GET_USER_INFO_API_URL
     >(GET_USER_INFO_API_URL, async GET_USER_INFO_API_URL => {
 
@@ -28,6 +29,7 @@ export const useGetUserInfo = () => {
             {
                 testResult: {
                     success: true,
+                    code: EApiResultCode.Success,
                     message: "获取用户信息成功",
                     data: {
                         body: "",
@@ -68,8 +70,8 @@ export const useGetUserInfo = () => {
 export const useGetId = (params: IGetIdApiParams) => {
 
     const { data: result, ...other } = useSWR<
-        AxiosResponse<IGetIdApiResultData>,
-        AxiosResponse<IGetIdApiResultData>,
+        IApiResult<IGetIdApiResultData>,
+        IApiResult<IGetIdApiResultData>,
         [typeof GET_ID_API_URL, IGetIdApiParams]
     >([GET_ID_API_URL, params], async ([GET_ID_API_URL, params]) => {
 
@@ -78,6 +80,7 @@ export const useGetId = (params: IGetIdApiParams) => {
             {
                 testResult: {
                     success: true,
+                    code: EApiResultCode.Success,
                     message: "获取id成功",
                     data: {
                         id: 2

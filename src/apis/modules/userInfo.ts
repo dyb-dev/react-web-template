@@ -4,8 +4,6 @@
 
 import { sendRequest } from "../request"
 
-import type { AxiosResponse } from "axios"
-
 /** 登录 参数 */
 export interface ILoginApiParams {
     /** 用户手机号 */
@@ -33,13 +31,13 @@ export const LOGIN_API_URL = ""
  * @param {ILoginApiParams} params 参数
  * @param {TModifyProperties<ITestRequestConfig<ILoginApiResultData>, "test">} [testRequestConfig] 测试请求配置
  * @param {typeof LOGIN_API_URL} [url] 路径
- * @returns {*}  {Promise<AxiosResponse<ILoginApiResultData>>} 结果数据
+ * @returns {*}  {Promise<IApiResult<ILoginApiResultData>>} 结果数据
  */
 export const loginApi = (
     params: ILoginApiParams,
     testRequestConfig?: TModifyProperties<ITestRequestConfig<ILoginApiResultData>, "test">,
     url: typeof LOGIN_API_URL = LOGIN_API_URL
-): Promise<AxiosResponse<ILoginApiResultData>> => {
+): Promise<IApiResult<ILoginApiResultData>> => {
 
     return sendRequest({
         url,
@@ -59,12 +57,12 @@ export const CHECK_LOGIN_API_URL = "/checkLogin"
  * @date 21/02/2025/  14:08:51
  * @param {TModifyProperties<ITestRequestConfig, "test">} [testRequestConfig] 测试请求配置
  * @param {typeof CHECK_LOGIN_API_URL} [url] 路径
- * @returns {*}  {Promise<AxiosResponse>} 结果数据
+ * @returns {*}  {Promise<IApiResult>} 结果数据
  */
 export const checkLoginApi = (
     testRequestConfig?: TModifyProperties<ITestRequestConfig, "test">,
     url: typeof CHECK_LOGIN_API_URL = CHECK_LOGIN_API_URL
-): Promise<AxiosResponse> => {
+): Promise<IApiResult> => {
 
     return sendRequest({
         url,
@@ -83,12 +81,12 @@ export const LOGOUT_API_URL = "/logout"
  * @date 21/02/2025/  14:09:06
  * @param {TModifyProperties<ITestRequestConfig, "test">} [testRequestConfig] 测试请求配置
  * @param {typeof LOGOUT_API_URL} [url] 路径
- * @returns {*}  {Promise<AxiosResponse>} 结果数据
+ * @returns {*}  {Promise<IApiResult>} 结果数据
  */
 export const logoutApi = (
     testRequestConfig?: TModifyProperties<ITestRequestConfig, "test">,
     url: typeof LOGOUT_API_URL = LOGOUT_API_URL
-): Promise<AxiosResponse> => {
+): Promise<IApiResult> => {
 
     return sendRequest({
         url,
