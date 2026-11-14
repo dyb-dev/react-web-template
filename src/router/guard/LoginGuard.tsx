@@ -13,7 +13,7 @@ import { mergeUrlQuery } from "@/utils"
 import type { ReactElement } from "react"
 import type { To } from "react-router-dom"
 
-/** CONST: 环境变量 */
+/** 环境变量 */
 const { VITE_LOGIN_ROUTE } = __PROJECT_INFO__.env
 
 /** 组件Props */

@@ -20,29 +20,29 @@ import { setupProdConfig } from "./vite/vite.prod.config"
 import type { ISetupEnvConfigParam } from "./vite/types"
 import type { ConfigEnv, UserConfig } from "vite"
 
-/** CONST: 项目根目录 */
+/** 项目根目录 */
 const projectRootDir = process.cwd()
 
-/** CONST: 是否开发模式 */
+/** 是否开发模式 */
 const isDevMode = process.env.NODE_ENV === "development"
 
 export default defineConfig(({ mode }: ConfigEnv) => {
 
-    /** CONST: 获取.env文件的环境变量 */
+    /** 获取.env文件的环境变量 */
     const _env = <ImportMetaEnv>loadEnv(mode, projectRootDir)
 
-    /** CONST: 项目信息 */
+    /** 项目信息 */
     const __PROJECT_INFO__ = generateProjectInfo(_env)
 
     const { VITE_PORT, VITE_BASE_PATH, VITE_PROTOCOL, VITE_PWA, VITE_HTML_MINIFY } = _env
 
-    /** CONST: 端口号 */
+    /** 端口号 */
     const _port = getPort(~~VITE_PORT)
 
-    /** CONST: 浏览器打开地址 */
+    /** 浏览器打开地址 */
     const _browserOpenUrl = `${VITE_PROTOCOL}://${getAvailableIPv4HostIP()}:${_port}`
 
-    /** CONST: 设置环境配置参数 */
+    /** 设置环境配置参数 */
     const _setupEnvConfigParam: ISetupEnvConfigParam = {
         projectRootDir,
         port: _port,
@@ -50,15 +50,15 @@ export default defineConfig(({ mode }: ConfigEnv) => {
         env: _env
     }
 
-    /** CONST: 开发环境配置 */
+    /** 开发环境配置 */
     const _devEnvConfig = setupDevConfig(_setupEnvConfigParam)
 
-    /** CONST: 当前环境配置 */
+    /** 当前环境配置 */
     const _currentEnvConfig: UserConfig = isDevMode
         ? _devEnvConfig
         : { ..._devEnvConfig, ...setupProdConfig(_setupEnvConfigParam) }
 
-    /** CONST: 基础环境配置 */
+    /** 基础环境配置 */
     const _baseEnvConfig = {
         // 项目根目录，默认： process.cwd()
         root: projectRootDir,

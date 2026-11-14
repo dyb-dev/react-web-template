@@ -132,13 +132,13 @@ export const setupVitePWA = (param: ISetupVitePWAParam): any[] => {
     } = param
     const { VITE_OUT_DIR, VITE_ASSETS_BASE_PATH, VITE_HTML_FILE_TYPE, VITE_OUT_SOURCEMAP } = env
 
-    /** CONST: icon路径前缀 */
+    /** icon路径前缀 */
     const _iconsPathPrefix = `${VITE_ASSETS_BASE_PATH}/image/sw/`
 
-    /** CONST: 资源路径参数 */
+    /** 资源路径参数 */
     const _assetsPathParam = `?version=${version}`
 
-    /** CONST: 哈希文件名的正则表达式模式 */
+    /** 哈希文件名的正则表达式模式 */
     const _hashPattern = /__.{8}\./
 
     return VitePWA({

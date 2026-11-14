@@ -36,10 +36,10 @@ export const setupProdConfig = (param: ISetupEnvConfigParam): UserConfig => {
         VITE_LEGACY_BROWSER_SUPPORT
     } = env
 
-    /** CONST: rollup打包需排除的库列表,示例：["zepto.min.js"]（如果文件来自public/js，需html通过script引入，如果该文件支持模块化，引入时需添加type="module"） */
+    /** rollup打包需排除的库列表,示例：["zepto.min.js"]（如果文件来自public/js，需html通过script引入，如果该文件支持模块化，引入时需添加type="module"） */
     const rollupExternalLibList: string[] = []
 
-    /** CONST: 输出文件名模板 */
+    /** 输出文件名模板 */
     const _outFileNameTemplate = "[name]__[hash:8]"
 
     return {

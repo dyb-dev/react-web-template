@@ -1,6 +1,7 @@
 /** vite环境变量 */
 interface ImportMetaEnv {
-    // CONST: 运行时注入的环境变量
+    // #region CODE: 开发环境 & 生产环境 环境变量
+
     /** 运行时注入 基础路径 */
     readonly BASE_URL: string
     /** 运行时注入 是否为开发环境 */
@@ -16,7 +17,6 @@ interface ImportMetaEnv {
     /** 运行时注入 是否为服务端渲染模式 */
     readonly SSR: boolean
 
-    // CONST: 公共
     /** 协议 默认:http  */
     readonly VITE_PROTOCOL: string
     /** 默认端口号 默认:8080 */
@@ -41,22 +41,27 @@ interface ImportMetaEnv {
      * - 生产环境: 默认:/assets
      */
     readonly VITE_ASSETS_BASE_PATH: string
+    /** html文件类型 默认:html */
+    readonly VITE_HTML_FILE_TYPE: "html" | "aspx" | "php"
 
-    // CONST: 生产环境
+    // #endregion
+
+    // #region CODE: 生产环境 环境变量
+
     /** 打包输出目录 默认:dist */
     readonly VITE_OUT_DIR: string
     /** 打包输出资源目录 默认:assets */
     readonly VITE_OUT_ASSETS_DIR: string
     /** 网站基础路径 默认:空 */
     readonly VITE_BASE_PATH: string
-    /** html文件类型 默认:html */
-    readonly VITE_HTML_FILE_TYPE: "html" | "aspx" | "php"
     /** 是否压缩html文件 默认:true */
     readonly VITE_HTML_MINIFY: string
     /** 是否输出源代码映射文件 默认:false */
     readonly VITE_OUT_SOURCEMAP: string
     /** 是否启用旧版浏览器支持 默认:true */
     readonly VITE_LEGACY_BROWSER_SUPPORT: string
+
+    // #endregion
 }
 
 /** 扩展 ImportMeta 接口 */

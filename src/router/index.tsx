@@ -11,10 +11,10 @@ import { LoginGuard } from "./guard"
 
 import type { TRouteObject } from "react-router-dom"
 
-/** CONST: 环境变量 */
+/** 环境变量 */
 const { VITE_BASE_PATH, VITE_HOME_ROUTE, VITE_LOGIN_ROUTE, VITE_HTML_FILE_TYPE } = __PROJECT_INFO__.env
 
-/** LET: 路由列表 */
+/** 路由列表 */
 let routes: TRouteObject[] = [
     {
         path: VITE_HOME_ROUTE,
@@ -66,10 +66,10 @@ routes = [
     }
 ]
 
-// CONST: 导航至首页组件
+// 导航至首页组件
 const NavigateToHome = () => <Navigate to={`${VITE_HOME_ROUTE}${useLocation().search ?? ""}`} replace />
 
-/** CONST: 路由实例 */
+/** 路由实例 */
 export const router = createBrowserRouter(
     [
         ...routes.map(({ Component, ...route }) => ({
